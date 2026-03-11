@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turma da Aventura | Livros que Prendem Mais que Tela</title>
+<meta name="description" content="Mais de 70 livros infantis de aventura, fantasia e história — em 5 idiomas, disponíveis na Amazon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════
+   RESET & BASE — mobile-first, zero overflow
+══════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Lora', serif;
+  background: #0e0a1a;
+  color: #f0e8d0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ── Shared layout ── */
+.wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ══════════════════════════════════════════
+   ANIMATED STARFIELD BACKGROUND
+══════════════════════════════════════════ */
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  animation: twinkle var(--d, 3s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50%       { opacity: var(--op, .6); transform: scale(1.3); }
+}
+
+/* ══════════════════════════════════════════
+   NAV
+══════════════════════════════════════════ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(14,10,26,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,200,80,.12);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  gap: 16px;
+}
+.logo {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #ffc840;
+  letter-spacing: -.01em;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+.logo span { color: #ff7b54; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links a {
+  font-family: 'Baloo 2', cursive;
+  font-size: .85rem;
+  font-weight: 600;
+  color: rgba(240,232,208,.6);
+  transition: color .2s;
+  white-space: nowrap;
+}
+.nav-links a:hover { color: #ffc840; }
+
+.nav-langs {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.nav-langs a {
+  font-family: 'Baloo 2', cursive;
+  font-size: .7rem;
+  font-weight: 700;
+  color: rgba(240,232,208,.4);
+  padding: 3px 7px;
+  border: 1px solid rgba(255,200,80,.15);
+  border-radius: 4px;
+  transition: all .2s;
+}
+.nav-langs a:hover,
+.nav-langs a.on { color: #ffc840; border-color: rgba(255,200,80,.5); background: rgba(255,200,80,.08); }
+
+/* hamburger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-shrink: 0;
+}
+.burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffc840;
+  border-radius: 2px;
+  transition: all .3s;
+}
+.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(14,10,26,.98);
+  border-top: 1px solid rgba(255,200,80,.1);
+  padding: 20px;
+  gap: 16px;
+  position: fixed;
+  top: 64px; left: 0; right: 0;
+  z-index: 199;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f0e8d0;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,200,80,.1);
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-langs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
+.mobile-langs a {
+  font-size: .8rem;
+  padding: 5px 12px;
+  border: 1px solid rgba(255,200,80,.3);
+  border-radius: 20px;
+  color: #ffc840;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+}
+
+/* ══════════════════════════════════════════
+   HERO
+══════════════════════════════════════════ */
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 60px;
+  overflow: hidden;
+}
+
+/* big gradient orbs */
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(120,60,200,.35) 0%, transparent 70%);
+  top: -100px; left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,120,50,.2) 0%, transparent 70%);
+  bottom: -80px; right: -60px;
+  pointer-events: none;
+}
+
+.hero-sparkle {
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 12px;
+  display: block;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-5deg); }
+  50%      { transform: translateY(-12px) rotate(5deg); }
+}
+
+.hero-eyebrow {
+  font-family: 'Baloo 2', cursive;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #ff7b54;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeUp .6s .2s forwards;
+}
+
+.hero h1 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 8vw, 5.5rem);
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp .6s .35s forwards;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #ffc840;
+  text-shadow: 0 0 40px rgba(255,200,64,.5);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(240,232,208,.65);
+  max-width: 520px;
+  margin: 0 auto 36px;
+  line-height: 1.65;
+  opacity: 0;
+  animation: fadeUp .6s .5s forwards;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp .6s .65s forwards;
+}
+
+.btn-magic {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-magic:hover { transform: translateY(-3px); }
+.btn-magic:active { transform: translateY(0); }
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff7b54, #ffc840);
+  color: #1a0a00;
+  box-shadow: 0 4px 20px rgba(255,150,60,.4);
+}
+.btn-primary:hover { box-shadow: 0 8px 30px rgba(255,150,60,.55); }
+
+.btn-outline {
+  background: transparent;
+  color: #ffc840;
+  border: 2px solid rgba(255,200,64,.5);
+}
+.btn-outline:hover { border-color: #ffc840; background: rgba(255,200,64,.08); }
+
+/* floating books deco */
+.hero-books {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 52px;
+  opacity: 0;
+  animation: fadeUp .6s .8s forwards;
+}
+.book-float {
+  width: 72px;
+  aspect-ratio: 2/3;
+  border-radius: 4px 8px 8px 4px;
+  border-left: 6px solid rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .45rem;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 6px 4px;
+  line-height: 1.3;
+  animation: bookFloat var(--fd, 4s) ease-in-out infinite;
+  animation-delay: var(--fdelay, 0s);
+  box-shadow: 4px 4px 12px rgba(0,0,0,.5);
+  cursor: default;
+}
+@keyframes bookFloat {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeUp .6s 1s forwards;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-num {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffc840;
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: .78rem;
+  color: rgba(240,232,208,.5);
+  margin-top: 2px;
+  font-family: 'Baloo 2', cursive;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════
+   SECTION: LIVROS EM DESTAQUE
+══════════════════════════════════════════ */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+}
+.section-alt { background: rgba(255,255,255,.025); }
+
+.section-tag {
+  font-family: 'Baloo 2', cursive;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #ff7b54;
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: 'Baloo 2', cursive;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.section-title em {
+  font-style: normal;
+  color: #ffc840;
+}
+.section-desc {
+  color: rgba(240,232,208,.55);
+  font-size: 1.05rem;
+  max-width: 480px;
+}
+.section-head {
+  margin-bottom: 48px;
+}
+
+/* Book cards */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.book-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,200,80,.12);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+  display: flex;
+  flex-direction: column;
+}
+.book-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,200,80,.4);
+  box-shadow: 0 16px 40px rgba(0,0,0,.4), 0 0 0 1px rgba(255,200,80,.15);
+}
+.book-cover {
+  width: 100%;
+  aspect-ratio: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: .78rem;
+  color: rgba(255,255,255,.9);
+  text-align: center;
+  padding: 16px 10px;
+  line-height: 1.4;
+  position: relative;
+  overflow: hidden;
+}
+.book-cover::after {
+  content: '📖';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.4rem;
+  opacity: .4;
+}
+.bc1 { background: linear-gradient(145deg, #4a1259, #8b2fc9); }
+.bc2 { background: linear-gradient(145deg, #0d3b6e, #1a7abf); }
+.bc3 { background: linear-gradient(145deg, #6b2a00, #c45000); }
+.bc4 { background: linear-gradient(145deg, #0a4a2a, #1a8a50); }
+.bc5 { background: linear-gradient(145deg, #4a0a0a, #9b1a1a); }
+.bc6 { background: linear-gradient(145deg, #1a1a5e, #3a3abf); }
+
+.book-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.book-series-label {
+  font-family: 'Baloo 2', cursive;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #ff7b54;
+}
+.book-title {
+  font-family: 'Baloo 2', cursive;
+  font-size: .95rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.book-price {
+  font-family: 'Baloo 2', cursive;
+  font-size: .82rem;
+  font-weight: 600;
+  color: #ffc840;
+  margin-top: 2px;
+}
+.book-btn {
+  display: block;
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: .8rem;
+  padding: 10px;
+  background: rgba(255,200,64,.12);
+  border: 1px solid rgba(255,200,64,.25);
+  border-radius: 8px;
+  color: #ffc840;
+  margin-top: auto;
+  transition: background .2s, border-color .2s;
+}
+.book-btn:hover { background: rgba(255,200,64,.22); border-color: rgba(255,200,64,.6); }
+
+.section-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* ══════════════════════════════════════════
+   SECTION: UNIVERSO (séries)
+══════════════════════════════════════════ */
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.series-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,200,80,.1);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: border-color .2s, background .2s, transform .2s;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.series-card:hover {
+  border-color: rgba(255,200,80,.35);
+  background: rgba(255,200,80,.04);
+  transform: translateY(-2px);
+}
+.series-emoji {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.series-text h3 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffc840;
+  margin-bottom: 6px;
+}
+.series-text p {
+  font-size: .95rem;
+  color: rgba(240,232,208,.6);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.series-langs {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.lang-pill {
+  font-family: 'Baloo 2', cursive;
+  font-size: .62rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: rgba(255,200,64,.1);
+  border: 1px solid rgba(255,200,64,.25);
+  color: #ffc840;
+}
+
+/* ══════════════════════════════════════════
+   SECTION: PICKS POR IDADE
+══════════════════════════════════════════ */
+.picks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pick-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,200,80,.1);
+  border-radius: 16px;
+  padding: 32px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .25s, transform .25s;
+}
+.pick-card:hover {
+  border-color: rgba(255,200,80,.4);
+  transform: translateY(-4px);
+}
+.pick-age-badge {
+  display: inline-block;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: rgba(255,200,64,.12);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  line-height: 1;
+  pointer-events: none;
+}
+.pick-tag {
+  display: inline-block;
+  font-family: 'Baloo 2', cursive;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: rgba(255,123,84,.15);
+  color: #ff7b54;
+  border: 1px solid rgba(255,123,84,.3);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.pick-card h3 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.pick-card p {
+  font-size: .97rem;
+  color: rgba(240,232,208,.6);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.pick-card .book-btn { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ══════════════════════════════════════════
+   SECTION: BLOG PREVIEW
+══════════════════════════════════════════ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+.blog-main {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,200,80,.12);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color .25s;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.blog-main:hover { border-color: rgba(255,200,80,.4); }
+.blog-main-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #1a0d2e, #3d1a6e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+.blog-main-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.blog-tag {
+  display: inline-block;
+  font-family: 'Baloo 2', cursive;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: rgba(255,200,64,.1);
+  color: #ffc840;
+  border: 1px solid rgba(255,200,64,.25);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.blog-main-body h3 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.blog-main-body p {
+  font-size: .97rem;
+  color: rgba(240,232,208,.55);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 16px;
+}
+.blog-read {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: .82rem;
+  color: #ffc840;
+}
+
+.blog-side { display: flex; flex-direction: column; gap: 14px; }
+.blog-mini {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,200,80,.1);
+  border-radius: 12px;
+  padding: 18px;
+  text-decoration: none;
+  transition: border-color .2s, background .2s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.blog-mini:hover { border-color: rgba(255,200,80,.35); background: rgba(255,200,64,.03); }
+.blog-mini h4 {
+  font-family: 'Baloo 2', cursive;
+  font-size: .95rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.blog-mini p { font-size: .88rem; color: rgba(240,232,208,.5); line-height: 1.5; }
+
+/* ══════════════════════════════════════════
+   SECTION: AUTOR
+══════════════════════════════════════════ */
+.author-wrap {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.author-avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2d1b4e, #5b2d8e);
+  border: 4px solid rgba(255,200,64,.3);
+  box-shadow: 0 0 40px rgba(120,60,200,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  flex-shrink: 0;
+}
+.author-text .section-tag { margin-bottom: 8px; }
+.author-text h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.author-text p {
+  color: rgba(240,232,208,.65);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.author-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 24px;
+}
+.author-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+footer {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,.4);
+  border-top: 1px solid rgba(255,200,80,.1);
+  padding: 48px 0 28px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+.footer-brand {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #ffc840;
+  margin-bottom: 10px;
+}
+.footer-brand span { color: #ff7b54; }
+.footer-desc {
+  font-size: .95rem;
+  color: rgba(240,232,208,.4);
+  line-height: 1.65;
+}
+.footer-col h4 {
+  font-family: 'Baloo 2', cursive;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #ffc840;
+  margin-bottom: 14px;
+}
+.footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul li a {
+  font-size: .92rem;
+  color: rgba(240,232,208,.45);
+  transition: color .2s;
+}
+.footer-col ul li a:hover { color: #ffc840; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,200,80,.08);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-bottom p { font-size: .85rem; color: rgba(240,232,208,.3); }
+.footer-bottom-langs { display: flex; gap: 12px; }
+.footer-bottom-langs a { font-size: .82rem; color: rgba(240,232,208,.35); transition: color .2s; }
+.footer-bottom-langs a:hover { color: #ffc840; }
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — TABLET (≤900px)
+══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .burger { display: flex; }
+  .nav-langs { display: none; }
+
+  .books-grid { grid-template-columns: repeat(2, 1fr); }
+  .series-grid { grid-template-columns: 1fr; }
+  .picks-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid { grid-template-columns: 1fr; }
+  .author-wrap { grid-template-columns: 160px 1fr; gap: 28px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤600px)
+══════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .wrap { padding: 0 16px; }
+  .section { padding: 60px 0; }
+
+  .hero { padding: 90px 16px 52px; }
+  .hero-sparkle { font-size: 2.2rem; }
+  .hero-stats { gap: 20px; }
+  .hero-stat-num { font-size: 1.6rem; }
+
+  .books-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .book-info { padding: 12px; }
+  .book-title { font-size: .88rem; }
+
+  .picks-grid { grid-template-columns: 1fr; }
+
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-main-img { height: 160px; }
+
+  .author-wrap { grid-template-columns: 1fr; text-align: center; }
+  .author-avatar { width: 140px; margin: 0 auto; }
+  .author-langs { justify-content: center; }
+  .author-btns { justify-content: center; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .series-card { flex-direction: column; gap: 12px; padding: 22px 18px; }
+}
+
+/* ══════════════════════════════════════════
+   EXTRA SMALL (≤380px)
+══════════════════════════════════════════ */
+@media (max-width: 380px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-btns { flex-direction: column; align-items: stretch; }
+  .btn-magic { justify-content: center; }
+  .books-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ STARS ═══ -->
+<div class="stars-bg" id="stars"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#">✨ Turma da <span>Aventura</span></a>
+    <div class="nav-links">
+      <a href="#livros">Livros</a>
+      <a href="#universo">Universo</a>
+      <a href="#blog">Blog</a>
+      <a href="#autor">Autor</a>
+    </div>
+    <div class="nav-langs">
+      <a href="#" class="on">PT</a>
+      <a href="#">EN</a>
+      <a href="#">ES</a>
+      <a href="#">DE</a>
+      <a href="#">JP</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#livros" class="menu-close">📚 Livros</a>
+  <a href="#universo" class="menu-close">🗺 Universo</a>
+  <a href="#blog" class="menu-close">📝 Blog</a>
+  <a href="#autor" class="menu-close">✍️ Autor</a>
+  <div class="mobile-langs">
+    <a href="#" class="on">PT-BR</a>
+    <a href="#">EN</a>
+    <a href="#">ES</a>
+    <a href="#">DE</a>
+    <a href="#">JP</a>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <span class="hero-sparkle">🧙‍♂️</span>
+  <p class="hero-eyebrow">Universo oficial da série</p>
+  <h1>Aventuras que<br><em>prendem mais</em><br>que qualquer tela</h1>
+  <p class="hero-sub">Mais de 70 livros infantis de aventura, fantasia e história — para crianças de 6 a 12 anos, em 5 idiomas, disponíveis na Amazon.</p>
+  <div class="hero-btns">
+    <a class="btn-magic btn-primary" href="#livros">📚 Ver os livros</a>
+    <a class="btn-magic btn-outline" href="#universo">🗺 Explorar séries</a>
+  </div>
+
+  <div class="hero-books">
+    <div class="book-float bc1" style="--fd:3.5s;--fdelay:0s">Máquina do Tempo</div>
+    <div class="book-float bc2" style="--fd:4s;--fdelay:.4s">Atlântida</div>
+    <div class="book-float bc3" style="--fd:3s;--fdelay:.2s">Roma</div>
+    <div class="book-float bc4" style="--fd:4.5s;--fdelay:.6s">Renascimento</div>
+    <div class="book-float bc5" style="--fd:3.2s;--fdelay:.1s">Dinossauros</div>
+    <div class="book-float bc6" style="--fd:3.8s;--fdelay:.5s">Constantinopla</div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">70+</div>
+      <div class="hero-stat-label">Títulos</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">Idiomas</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">6–12</div>
+      <div class="hero-stat-label">Anos</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">8</div>
+      <div class="hero-stat-label">Séries</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LIVROS EM DESTAQUE ═══ -->
+<section class="section" id="livros">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-tag">✦ Em destaque</p>
+      <h2 class="section-title">Os livros mais <em>amados</em></h2>
+      <p class="section-desc">Aventuras que já conquistaram leitores no Brasil, EUA, Espanha, Alemanha e Japão.</p>
+    </div>
+    <div class="books-grid">
+      <article class="book-card reveal">
+        <div class="book-cover bc1">⚙️ A Máquina do Tempo</div>
+        <div class="book-info">
+          <div class="book-series-label">Invenções</div>
+          <div class="book-title">A Máquina do Tempo</div>
+          <div class="book-price">eBook R$9 · Impresso R$49</div>
+          <a class="book-btn" href="https://www.amazon.com.br/dp/B0GHJKMPNK" target="_blank" rel="noopener sponsored">Ver na Amazon →</a>
+        </div>
+      </article>
+      <article class="book-card reveal">
+        <div class="book-cover bc2">🏛 O Segredo de Atlântida</div>
+        <div class="book-info">
+          <div class="book-series-label">Lugares Incríveis</div>
+          <div class="book-title">O Segredo de Atlântida</div>
+          <div class="book-price">eBook R$7 · Impresso R$31</div>
+          <a class="book-btn" href="https://www.amazon.com.br/dp/B0FT6J8MSB" target="_blank" rel="noopener sponsored">Ver na Amazon →</a>
+        </div>
+      </article>
+      <article class="book-card reveal">
+        <div class="book-cover bc3">🏰 Mistério no Castelo Medieval</div>
+        <div class="book-info">
+          <div class="book-series-label">Viajantes do Tempo</div>
+          <div class="book-title">Mistério no Castelo Medieval</div>
+          <div class="book-price">eBook R$12 · Impresso R$43</div>
+          <a class="book-btn" href="https://www.amazon.com.br/dp/B0FSQ3JP52" target="_blank" rel="noopener sponsored">Ver na Amazon →</a>
+        </div>
+      </article>
+      <article class="book-card reveal">
+        <div class="book-cover bc4">🎨 Enigma no Renascimento</div>
+        <div class="book-info">
+          <div class="book-series-label">Viajantes do Tempo</div>
+          <div class="book-title">Enigma no Renascimento</div>
+          <div class="book-price">eBook R$12 · Impresso R$31</div>
+          <a class="book-btn" href="https://www.amazon.com.br/dp/B0FSVVQMND" target="_blank" rel="noopener sponsored">Ver na Amazon →</a>
+        </div>
+      </article>
+    </div>
+    <div class="section-cta reveal">
+      <a class="btn-magic btn-primary" href="catalogo.html">📖 Ver catálogo completo (70+ títulos)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ UNIVERSO / SÉRIES ═══ -->
+<section class="section section-alt" id="universo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-tag">🗺 O universo</p>
+      <h2 class="section-title">8 séries, <em>infinitas aventuras</em></h2>
+      <p class="section-desc">De Roma antiga ao futuro distante — cada série é uma porta para um mundo novo.</p>
+    </div>
+    <div class="series-grid">
+      <div class="series-card reveal">
+        <div class="series-emoji">⏳</div>
+        <div class="series-text">
+          <h3>Viajantes do Tempo</h3>
+          <p>Roma, Constantinopla, castelos medievais, Renascimento, pirâmides e o futuro. A série que ensina história sem a criança perceber.</p>
+          <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span><span class="lang-pill">ES</span><span class="lang-pill">DE</span></div>
+        </div>
+      </div>
+      <div class="series-card reveal">
+        <div class="series-emoji">💡</div>
+        <div class="series-text">
+          <h3>Invenções</h3>
+          <p>A roda, a lâmpada, a imprensa de Gutenberg — as maiores invenções da história contadas como aventura épica.</p>
+          <div class="series-langs"><span class="lang-pill">PT</span></div>
+        </div>
+      </div>
+      <div class="series-card reveal">
+        <div class="series-emoji">🗺</div>
+        <div class="series-text">
+          <h3>Lugares Incríveis</h3>
+          <p>Atlântida, Constantinopla e outros lugares lendários como palco de aventuras impossíveis.</p>
+          <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span></div>
+        </div>
+      </div>
+      <div class="series-card reveal">
+        <div class="series-emoji">🤣</div>
+        <div class="series-text">
+          <h3>Calixto Salsicha</h3>
+          <p>Humor, esperteza e golpes completamente improváveis. A série mais engraçada da coleção — para dar boas gargalhadas.</p>
+          <div class="series-langs"><span class="lang-pill">PT</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PICKS POR IDADE ═══ -->
+<section class="section" id="picks">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-tag">🎯 Por onde começar</p>
+      <h2 class="section-title">O livro certo <em>para cada idade</em></h2>
+    </div>
+    <div class="picks-grid">
+      <div class="pick-card reveal">
+        <span class="pick-age-badge">6–8</span>
+        <span class="pick-tag">6 a 8 anos</span>
+        <h3>Para os pequenos aventureiros</h3>
+        <p>Capítulos curtos, muita ação e uma máquina que transforma sonhos em realidade. O primeiro passo perfeito.</p>
+        <a class="book-btn" href="https://www.amazon.com.br/dp/B0DWQSXCW3" target="_blank" rel="noopener sponsored">🌟 A Incrível Máquina de Sonhos</a>
+      </div>
+      <div class="pick-card reveal">
+        <span class="pick-age-badge">9–11</span>
+        <span class="pick-tag">9 a 11 anos</span>
+        <h3>Aventura e história real</h3>
+        <p>A série Viajantes do Tempo leva para Roma, castelos medievais e o Renascimento — aprendendo sem perceber.</p>
+        <a class="book-btn" href="catalogo.html" target="_blank">🏰 Ver série completa</a>
+      </div>
+      <div class="pick-card reveal">
+        <span class="pick-age-badge">12+</span>
+        <span class="pick-tag">12 anos ou mais</span>
+        <h3>Mistério e emoção total</h3>
+        <p>O Enigma do Explorador Perdido — suspense, descoberta e uma aventura que ninguém vai esquecer.</p>
+        <a class="book-btn" href="https://www.amazon.com.br/dp/B0DTCQ2KNR" target="_blank" rel="noopener sponsored">🔍 O Enigma do Explorador</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOG ═══ -->
+<section class="section section-alt" id="blog">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-tag">📝 Blog</p>
+      <h2 class="section-title">Do universo da <em>Turma da Aventura</em></h2>
+      <p class="section-desc">Guias, resenhas, dicas e bastidores da série.</p>
+    </div>
+    <div class="blog-grid reveal">
+      <a class="blog-main" href="blog/post.html">
+        <div class="blog-main-img">📚</div>
+        <div class="blog-main-body">
+          <span class="blog-tag">Guia</span>
+          <h3>Os melhores livros infantis por faixa etária em 2025</h3>
+          <p>Um guia completo para pais e educadores escolherem o livro certo para cada fase — dos 6 aos 12 anos.</p>
+          <span class="blog-read">Ler artigo completo →</span>
+        </div>
+      </a>
+      <div class="blog-side">
+        <a class="blog-mini" href="blog/post.html">
+          <span class="blog-tag">Lista</span>
+          <h4>7 livros para tirar crianças do celular</h4>
+          <p>Aventuras que prendem mais que qualquer tela.</p>
+        </a>
+        <a class="blog-mini" href="blog/post.html">
+          <span class="blog-tag">Série</span>
+          <h4>Turma da Aventura em 5 idiomas</h4>
+          <p>Como encontrar os livros em EN, ES, DE e JP.</p>
+        </a>
+        <a class="blog-mini" href="blog/post.html">
+          <span class="blog-tag">Resenha</span>
+          <h4>A Máquina do Tempo: vale a pena?</h4>
+          <p>Por que toda criança deveria ler essa série.</p>
+        </a>
+      </div>
+    </div>
+    <div class="section-cta reveal">
+      <a class="btn-magic btn-outline" href="blog/">Ver todos os artigos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AUTOR ═══ -->
+<section class="section" id="autor">
+  <div class="wrap">
+    <div class="author-wrap reveal">
+      <div class="author-avatar">✍️</div>
+      <div class="author-text">
+        <p class="section-tag">Sobre o autor</p>
+        <h2>Guilherme Miranda de Aguiar</h2>
+        <p>Autor de mais de 70 livros publicados na Amazon em 5 idiomas. Criou a Turma da Aventura para fazer crianças amarem ler — com histórias de aventura que competem de igual para igual com celular e jogos.</p>
+        <p>De Serrana, SP, para o mundo: cada série foi pensada para uma faixa etária específica, com aventura, valores e o prazer de descobrir o mundo pelos livros.</p>
+        <div class="author-langs">
+          <span class="lang-pill">🇧🇷 Português</span>
+          <span class="lang-pill">🇺🇸 English</span>
+          <span class="lang-pill">🇪🇸 Español</span>
+          <span class="lang-pill">🇩🇪 Deutsch</span>
+          <span class="lang-pill">🇯🇵 日本語</span>
+        </div>
+        <div class="author-btns">
+          <a class="btn-magic btn-primary" href="autor.html">Conhecer o autor</a>
+          <a class="btn-magic btn-outline" href="catalogo.html">Ver todos os livros</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">✨ Turma da <span>Aventura</span></div>
+        <p class="footer-desc">Universo oficial da série de livros infantis e juvenis de aventura, fantasia e história — disponíveis na Amazon em 5 idiomas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Séries</h4>
+        <ul>
+          <li><a href="catalogo.html">Viajantes do Tempo</a></li>
+          <li><a href="catalogo.html">Invenções</a></li>
+          <li><a href="catalogo.html">Lugares Incríveis</a></li>
+          <li><a href="catalogo.html">Calixto Salsicha</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="autor.html">Autor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Amazon</h4>
+        <ul>
+          <li><a href="https://www.amazon.com.br" target="_blank" rel="noopener">🇧🇷 .com.br</a></li>
+          <li><a href="https://www.amazon.com" target="_blank" rel="noopener">🇺🇸 .com</a></li>
+          <li><a href="https://www.amazon.es" target="_blank" rel="noopener">🇪🇸 .es</a></li>
+          <li><a href="https://www.amazon.de" target="_blank" rel="noopener">🇩🇪 .de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Guilherme Miranda de Aguiar · Links de afiliado Amazon</p>
+      <div class="footer-bottom-langs">
+        <a href="#">PT</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a><a href="#">JP</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── Stars ──
+(function(){
+  const container = document.getElementById('stars');
+  const count = window.innerWidth < 600 ? 60 : 120;
+  for(let i = 0; i < count; i++){
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.5 + .5;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      --d:${2+Math.random()*4}s;
+      --delay:${Math.random()*5}s;
+      --op:${.3+Math.random()*.5};
+    `;
+    container.appendChild(s);
+  }
+})();
+
+// ── Mobile menu ──
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-menu');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+document.querySelectorAll('.menu-close').forEach(a => {
+  a.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+// ── Scroll reveal ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

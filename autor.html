@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guilherme Miranda de Aguiar | Autor da Turma da Aventura</title>
+<meta name="description" content="Conheça Guilherme Miranda de Aguiar — autor de mais de 70 livros infantis e juvenis em 5 idiomas, criador da série Turma da Aventura.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Guilherme Miranda de Aguiar","jobTitle":"Autor","description":"Autor de mais de 70 livros infantis e juvenis em 5 idiomas.","url":"https://turma-da-aventura.github.io/autor.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Lora',serif;background:#0e0a1a;color:#f0e8d0;overflow-x:hidden;min-height:100vh;width:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+
+.stars-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;border-radius:50%;background:#fff;animation:twinkle var(--d,3s) ease-in-out infinite;animation-delay:var(--delay,0s);opacity:0}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:var(--op,.6);transform:scale(1.3)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(14,10,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,200,80,.12)}
+.nav-inner{display:flex;align-items:center;height:64px;gap:16px}
+.logo{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.25rem;color:#ffc840;flex-shrink:0;margin-right:auto}
+.logo span{color:#ff7b54}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-family:'Baloo 2',cursive;font-size:.85rem;font-weight:600;color:rgba(240,232,208,.6);transition:color .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.on{color:#ffc840}
+.nav-langs{display:flex;gap:6px;flex-shrink:0}
+.nav-langs a{font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:700;color:rgba(240,232,208,.4);padding:3px 7px;border:1px solid rgba(255,200,80,.15);border-radius:4px;transition:all .2s}
+.nav-langs a:hover,.nav-langs a.on{color:#ffc840;border-color:rgba(255,200,80,.5);background:rgba(255,200,80,.08)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;flex-shrink:0}
+.burger span{display:block;width:22px;height:2px;background:#ffc840;border-radius:2px;transition:all .3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;flex-direction:column;background:rgba(14,10,26,.98);border-top:1px solid rgba(255,200,80,.1);padding:20px;gap:16px;position:fixed;top:64px;left:0;right:0;z-index:199}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:#f0e8d0;padding:8px 0;border-bottom:1px solid rgba(255,200,80,.1)}
+.mobile-langs{display:flex;gap:8px;flex-wrap:wrap;padding-top:4px}
+.mobile-langs a{font-size:.8rem;padding:5px 12px;border:1px solid rgba(255,200,80,.3);border-radius:20px;color:#ffc840;font-family:'Baloo 2',cursive;font-weight:700}
+
+/* author hero */
+.author-hero{position:relative;z-index:1;padding:100px 20px 72px;border-bottom:1px solid rgba(255,200,80,.1);overflow:hidden}
+.author-hero::before{content:'';position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(120,60,200,.2) 0%,transparent 65%);top:-200px;right:-150px;pointer-events:none}
+.author-hero-grid{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center}
+.author-avatar-wrap{position:relative;flex-shrink:0}
+.author-avatar-wrap::before{content:'';position:absolute;inset:-12px;border:1px solid rgba(255,200,80,.15);border-radius:50%;pointer-events:none}
+.author-avatar-wrap::after{content:'';position:absolute;inset:-24px;border:1px solid rgba(255,200,80,.07);border-radius:50%;pointer-events:none}
+.author-avatar{width:100%;aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,#2d1b4e,#5b2d8e,#1a0d2e);border:3px solid rgba(255,200,64,.3);box-shadow:0 0 60px rgba(120,60,200,.25);display:flex;align-items:center;justify-content:center;font-size:5.5rem;position:relative;z-index:1}
+.author-tag{font-family:'Baloo 2',cursive;font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#ff7b54;margin-bottom:10px}
+.author-hero h1{font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(1.8rem,3.5vw,3rem);color:#fff;margin-bottom:6px}
+.author-role{font-family:'Baloo 2',cursive;font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,200,64,.5);margin-bottom:20px}
+.author-bio p{font-size:1.05rem;color:rgba(240,232,208,.65);line-height:1.8;margin-bottom:12px}
+.author-langs{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}
+.lang-pill{font-family:'Baloo 2',cursive;font-size:.68rem;font-weight:700;padding:4px 12px;border-radius:20px;background:rgba(255,200,64,.1);border:1px solid rgba(255,200,64,.25);color:#ffc840}
+.author-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-magic{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2',cursive;font-weight:700;font-size:1rem;padding:13px 26px;border-radius:50px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;white-space:nowrap}
+.btn-magic:hover{transform:translateY(-3px)}
+.btn-primary{background:linear-gradient(135deg,#ff7b54,#ffc840);color:#1a0a00;box-shadow:0 4px 20px rgba(255,150,60,.4)}
+.btn-primary:hover{box-shadow:0 8px 30px rgba(255,150,60,.55)}
+.btn-outline{background:transparent;color:#ffc840;border:2px solid rgba(255,200,64,.5)}
+.btn-outline:hover{border-color:#ffc840;background:rgba(255,200,64,.08)}
+
+/* stats */
+.stats-section{position:relative;z-index:1;background:rgba(255,255,255,.025);border-bottom:1px solid rgba(255,200,80,.1);padding:32px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}
+.stat-box{padding:16px 8px}
+.stat-num{font-family:'Baloo 2',cursive;font-weight:800;font-size:2.2rem;color:#ffc840;line-height:1;display:block}
+.stat-lbl{font-family:'Baloo 2',cursive;font-size:.68rem;font-weight:700;color:rgba(240,232,208,.35);margin-top:4px;letter-spacing:.05em}
+
+/* about section */
+.section{position:relative;z-index:1;padding:72px 0}
+.section-alt{background:rgba(255,255,255,.02);border-top:1px solid rgba(255,200,80,.08);border-bottom:1px solid rgba(255,200,80,.08)}
+.section-tag{font-family:'Baloo 2',cursive;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#ff7b54;margin-bottom:8px}
+.section-title{font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:16px}
+.section-title em{font-style:normal;color:#ffc840}
+
+/* about grid */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about-text p{font-size:1.05rem;color:rgba(240,232,208,.65);line-height:1.8;margin-bottom:14px}
+
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.tl-item{display:grid;grid-template-columns:72px 1fr;gap:16px;padding-bottom:28px;position:relative}
+.tl-item:not(:last-child)::before{content:'';position:absolute;left:35px;top:26px;bottom:0;width:1px;background:rgba(255,200,80,.15)}
+.tl-year{font-family:'Baloo 2',cursive;font-weight:800;font-size:.85rem;color:#ffc840;padding-top:2px;text-align:right;line-height:1.4}
+.tl-dot{width:8px;height:8px;background:#ff7b54;border-radius:50%;position:absolute;left:32px;top:6px;box-shadow:0 0 8px rgba(255,123,84,.6)}
+.tl-content h4{font-family:'Baloo 2',cursive;font-weight:700;font-size:.95rem;color:#fff;margin-bottom:4px}
+.tl-content p{font-size:.92rem;color:rgba(240,232,208,.5);line-height:1.6}
+
+/* series grid */
+.series-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.series-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,200,80,.1);border-radius:16px;padding:24px 20px;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
+.series-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ff7b54,#ffc840)}
+.series-card:hover{border-color:rgba(255,200,80,.4);transform:translateY(-3px)}
+.series-card .s-emoji{font-size:2rem;display:block;margin-bottom:10px}
+.series-card h3{font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:#ffc840;margin-bottom:6px}
+.series-card p{font-size:.9rem;color:rgba(240,232,208,.55);line-height:1.55;margin-bottom:12px}
+.series-langs{display:flex;gap:5px;flex-wrap:wrap}
+
+/* languages */
+.langs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:8px}
+.lang-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,200,80,.1);border-radius:16px;padding:24px 12px;text-align:center;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.lang-card:hover{border-color:rgba(255,200,80,.4);background:rgba(255,200,64,.04);transform:translateY(-3px)}
+.lang-flag{font-size:2.4rem;display:block;margin-bottom:8px}
+.lang-card h3{font-family:'Baloo 2',cursive;font-weight:800;font-size:.95rem;color:#fff;margin-bottom:4px}
+.lang-card p{font-family:'Baloo 2',cursive;font-size:.7rem;color:rgba(240,232,208,.4)}
+
+/* section cta */
+.section-cta{text-align:center;margin-top:40px}
+
+footer{position:relative;z-index:1;background:rgba(0,0,0,.4);border-top:1px solid rgba(255,200,80,.1);padding:48px 0 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer-brand{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.2rem;color:#ffc840;margin-bottom:10px}
+.footer-brand span{color:#ff7b54}
+.footer-desc{font-size:.95rem;color:rgba(240,232,208,.4);line-height:1.65}
+.footer-col h4{font-family:'Baloo 2',cursive;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ffc840;margin-bottom:14px}
+.footer-col ul{display:flex;flex-direction:column;gap:8px}
+.footer-col ul li a{font-size:.92rem;color:rgba(240,232,208,.45);transition:color .2s}
+.footer-col ul li a:hover{color:#ffc840}
+.footer-bottom{border-top:1px solid rgba(255,200,80,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.85rem;color:rgba(240,232,208,.3)}
+.footer-bottom-langs{display:flex;gap:12px}
+.footer-bottom-langs a{font-size:.82rem;color:rgba(240,232,208,.35);transition:color .2s}
+.footer-bottom-langs a:hover{color:#ffc840}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:1000px){.langs-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){
+  .nav-links{display:none}.burger{display:flex}.nav-langs{display:none}
+  .author-hero-grid{grid-template-columns:200px 1fr;gap:32px}
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .series-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  .author-hero-grid{grid-template-columns:1fr;text-align:center}
+  .author-avatar-wrap{width:180px;margin:0 auto}
+  .author-langs{justify-content:center}
+  .author-btns{justify-content:center}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .series-grid{grid-template-columns:1fr}
+  .langs-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+@media(max-width:380px){
+  .author-btns{flex-direction:column}
+  .btn-magic{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="stars-bg" id="stars"></div>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html">✨ Turma da <span>Aventura</span></a>
+    <div class="nav-links">
+      <a href="index.html#livros">Livros</a>
+      <a href="index.html#universo">Universo</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="autor.html" class="on">Autor</a>
+    </div>
+    <div class="nav-langs">
+      <a href="#" class="on">PT</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a><a href="#">JP</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mc">🏠 Início</a>
+  <a href="catalogo.html" class="mc">📚 Catálogo</a>
+  <a href="blog/index.html" class="mc">📝 Blog</a>
+  <a href="autor.html" class="mc">✍️ Autor</a>
+  <div class="mobile-langs"><a href="#" class="on">PT-BR</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a></div>
+</div>
+
+<!-- AUTHOR HERO -->
+<section class="author-hero">
+  <div class="wrap">
+    <div class="author-hero-grid">
+      <div class="author-avatar-wrap reveal">
+        <div class="author-avatar">✍️</div>
+      </div>
+      <div class="reveal">
+        <p class="author-tag">✨ Sobre o autor</p>
+        <h1>Guilherme Miranda de Aguiar</h1>
+        <p class="author-role">Autor · Criador da Turma da Aventura</p>
+        <div class="author-bio">
+          <p>Autor de mais de <strong style="color:#ffc840">70 títulos publicados na Amazon</strong> em 5 idiomas, Guilherme criou o universo da Turma da Aventura para conectar crianças e jovens à leitura através de histórias de aventura, fantasia e história que prendem do início ao fim.</p>
+          <p>De Serrana, SP, para o mundo — cada série foi pensada para uma faixa etária específica, com aventura, valores e o prazer de descobrir o mundo pelos livros.</p>
+        </div>
+        <div class="author-langs">
+          <span class="lang-pill">🇧🇷 Português</span>
+          <span class="lang-pill">🇺🇸 English</span>
+          <span class="lang-pill">🇪🇸 Español</span>
+          <span class="lang-pill">🇩🇪 Deutsch</span>
+          <span class="lang-pill">🇯🇵 日本語</span>
+        </div>
+        <div class="author-btns">
+          <a class="btn-magic btn-primary" href="catalogo.html">📚 Ver todos os livros</a>
+          <a class="btn-magic btn-outline" href="https://www.amazon.com.br/s?k=Guilherme+Miranda+de+Aguiar" target="_blank" rel="noopener">Ver na Amazon →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-box reveal"><span class="stat-num">70+</span><div class="stat-lbl">Títulos publicados</div></div>
+      <div class="stat-box reveal"><span class="stat-num">5</span><div class="stat-lbl">Idiomas</div></div>
+      <div class="stat-box reveal"><span class="stat-num">8</span><div class="stat-lbl">Séries criadas</div></div>
+      <div class="stat-box reveal"><span class="stat-num">6–12</span><div class="stat-lbl">Faixa etária</div></div>
+      <div class="stat-box reveal"><span class="stat-num">2023</span><div class="stat-lbl">Primeiro livro</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT + TIMELINE -->
+<section class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="section-tag">A jornada</p>
+        <h2 class="section-title">Como tudo <em>começou</em></h2>
+        <div class="about-text">
+          <p>A Turma da Aventura nasceu de uma pergunta simples: <em>por que tantas crianças abandonam a leitura antes mesmo de experimentar uma boa história?</em></p>
+          <p>Depois de publicar seu primeiro livro em 2023, Guilherme percebeu que o mercado editorial infantil em português — especialmente no formato digital — tinha uma lacuna enorme. Havia poucos livros de aventura acessíveis, com preços que famílias pudessem pagar e histórias que competissem de verdade com o celular e os jogos.</p>
+          <p>Em menos de dois anos, construiu uma biblioteca de mais de 70 títulos — e foi além: traduziu as séries para inglês, espanhol, alemão e japonês, levando a Turma da Aventura para leitores no mundo inteiro.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="section-tag">Cronologia</p>
+        <h2 class="section-title">Linha do <em>tempo</em></h2>
+        <div class="timeline" style="margin-top:24px">
+          <div class="tl-item">
+            <div class="tl-year">2023</div>
+            <div>
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>🚀 Primeiro livro publicado</h4>
+                <p>Início da jornada editorial na Amazon KDP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2024</div>
+            <div>
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>📚 Expansão para ficção infantil</h4>
+                <p>Lançamento das primeiras séries infantis e dos livros de colorir em múltiplos idiomas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2025</div>
+            <div>
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>🌍 Turma da Aventura global</h4>
+                <p>Mais de 8 séries, 5 idiomas e 70+ títulos. Mercados EN, ES, DE e JP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2026</div>
+            <div>
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>✨ Portal oficial no ar</h4>
+                <p>Site com catálogo completo, blog e presença digital consolidada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERIES -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:36px">
+      <p class="section-tag">Universo criado</p>
+      <h2 class="section-title">As séries da <em>Turma da Aventura</em></h2>
+    </div>
+    <div class="series-grid reveal">
+      <div class="series-card">
+        <span class="s-emoji">⏳</span>
+        <h3>Viajantes do Tempo</h3>
+        <p>Roma, Constantinopla, castelos medievais, Renascimento, pirâmides e o futuro.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span><span class="lang-pill">ES</span><span class="lang-pill">DE</span></div>
+      </div>
+      <div class="series-card">
+        <span class="s-emoji">💡</span>
+        <h3>Invenções</h3>
+        <p>A roda, a lâmpada, a imprensa — grandes invenções contadas como aventura épica.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span></div>
+      </div>
+      <div class="series-card">
+        <span class="s-emoji">🗺</span>
+        <h3>Lugares Incríveis</h3>
+        <p>Atlântida, Constantinopla e lugares lendários como palco de aventuras impossíveis.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span></div>
+      </div>
+      <div class="series-card">
+        <span class="s-emoji">🤣</span>
+        <h3>Calixto Salsicha</h3>
+        <p>Humor, esperteza e golpes completamente improváveis — para dar boas gargalhadas.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span></div>
+      </div>
+      <div class="series-card">
+        <span class="s-emoji">💛</span>
+        <h3>Turma da Aventura</h3>
+        <p>A série principal — emoções, valores, coragem, amizade e aventura para 6–12 anos.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span></div>
+      </div>
+      <div class="series-card">
+        <span class="s-emoji">📖</span>
+        <h3>Não-ficção</h3>
+        <p>Empreendedorismo, IA, logística e inovação — para adultos que querem se reinventar.</p>
+        <div class="series-langs"><span class="lang-pill">PT</span><span class="lang-pill">EN</span></div>
+      </div>
+    </div>
+    <div class="section-cta reveal">
+      <a class="btn-magic btn-primary" href="catalogo.html">📚 Ver catálogo completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:36px;text-align:center">
+      <p class="section-tag">Alcance global</p>
+      <h2 class="section-title">Disponível em <em>5 idiomas</em></h2>
+    </div>
+    <div class="langs-grid reveal">
+      <a class="lang-card" href="#" data-lang-switch="1" data-lang="pt">
+        <span class="lang-flag">🇧🇷</span>
+        <h3>Português</h3>
+        <p>29 títulos</p>
+      </a>
+      <a class="lang-card" href="#" data-lang-switch="1" data-lang="en">
+        <span class="lang-flag">🇺🇸</span>
+        <h3>English</h3>
+        <p>18 títulos</p>
+      </a>
+      <a class="lang-card" href="#" data-lang-switch="1" data-lang="es">
+        <span class="lang-flag">🇪🇸</span>
+        <h3>Español</h3>
+        <p>8 títulos</p>
+      </a>
+      <a class="lang-card" href="#" data-lang-switch="1" data-lang="de">
+        <span class="lang-flag">🇩🇪</span>
+        <h3>Deutsch</h3>
+        <p>5 títulos</p>
+      </a>
+      <a class="lang-card" href="#" data-lang-switch="1" data-lang="ja">
+        <span class="lang-flag">🇯🇵</span>
+        <h3>日本語</h3>
+        <p>1 título</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-brand">✨ Turma da <span>Aventura</span></div><p class="footer-desc">Portal oficial de Guilherme Miranda de Aguiar — autor de mais de 70 livros infantis e juvenis na Amazon.</p></div>
+      <div class="footer-col"><h4>Obras</h4><ul><li><a href="catalogo.html">Catálogo completo</a></li><li><a href="blog/index.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Amazon</h4><ul><li><a href="https://amazon.com.br" target="_blank" rel="noopener">🇧🇷 .com.br</a></li><li><a href="https://amazon.com" target="_blank" rel="noopener">🇺🇸 .com</a></li><li><a href="https://amazon.es" target="_blank" rel="noopener">🇪🇸 .es</a></li><li><a href="https://amazon.de" target="_blank" rel="noopener">🇩🇪 .de</a></li></ul></div>
+      <div class="footer-col"><h4>Idiomas</h4><ul><li><a href="#" data-lang-switch="1" data-lang="pt">Português</a></li><li><a href="#" data-lang-switch="1" data-lang="en">English</a></li><li><a href="#" data-lang-switch="1" data-lang="es">Español</a></li><li><a href="#" data-lang-switch="1" data-lang="de">Deutsch</a></li><li><a href="#" data-lang-switch="1" data-lang="fr">Français</a></li><li><a href="#" data-lang-switch="1" data-lang="it">Italiano</a></li><li><a href="#" data-lang-switch="1" data-lang="ja">日本語</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Guilherme Miranda de Aguiar · Links de afiliado Amazon</p><div class="footer-bottom-langs"><a href="#">PT</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a><a href="#">JP</a></div></div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script>
+const AUTHOR_TRANSLATIONS = {
+  pt: {
+    title: 'Autor | Guilherme Miranda de Aguiar',
+    nav: ['Livros','Universo','Blog','Catálogo','Autor'],
+    mobile: ['🏠 Início','📚 Catálogo','📝 Blog','✍️ Autor'],
+    tag: '✨ Sobre o autor',
+    role: 'Autor · Criador da Turma da Aventura',
+    bio: `<p>Criador da Turma da Aventura, este autor é apaixonado pela literatura infantil e pelo poder transformador das histórias. Seus livros, publicados em vários idiomas e vendidos em países de todo o mundo, oferecem às crianças aventuras empolgantes, com identidade própria e temas relevantes para o nosso tempo.</p><p>Com uma escrita acessível e personagens cativantes, sua missão é clara: fazer com que crianças leiam por prazer e desenvolvam imaginação, valores e curiosidade.</p><p>Hoje, já são mais de 70 títulos disponíveis na Amazon, entre histórias de ficção para crianças e jovens e obras de não-ficção para adultos.</p><p>As séries da Turma da Aventura incluem viagens no tempo, invenções malucas, descobertas históricas e lugares incríveis pelo planeta — tudo com linguagem apropriada para cada faixa etária.</p><p>"Quero que cada criança termine um capítulo com vontade de ler o próximo. Porque quando ela descobre esse prazer, ninguém mais tira dela."</p>`,
+    btn1: '📚 Ver todos os livros',
+    btn2: 'Ver na Amazon →'
+  },
+  en: {
+    title: 'Author | Guilherme Miranda de Aguiar',
+    nav: ['Books','Universe','Blog','Catalog','Author'],
+    mobile: ['🏠 Home','📚 Catalog','📝 Blog','✍️ Author'],
+    tag: '✨ About the Author',
+    role: 'Author · Creator of Adventure Squad',
+    bio: `<p>Creator of the Adventure Squad series, this author is passionate about children's literature and the transformative power of stories. His books, published in multiple languages and sold in countries around the world, offer children thrilling adventures with their own identity and themes relevant to our time.</p><p>With accessible writing and captivating characters, his mission is clear: to make children read for pleasure and develop imagination, values, and curiosity.</p><p>Today, there are over 70 titles available on Amazon, including fiction stories for children and young readers, as well as non-fiction works for adults.</p><p>The Adventure Squad series includes time travel, crazy inventions, historical discoveries, and amazing places around the planet — all with language appropriate for each age group.</p><p>"I want every child to finish one chapter eager to read the next. Because once they discover that joy, no one can take it away from them."</p>`,
+    btn1: '📚 See all books',
+    btn2: 'View on Amazon →'
+  },
+  de: {
+    title: 'Autor | Guilherme Miranda de Aguiar',
+    nav: ['Bücher','Universum','Blog','Katalog','Autor'],
+    mobile: ['🏠 Start','📚 Katalog','📝 Blog','✍️ Autor'],
+    tag: '✨ Über den Autor',
+    role: 'Autor · Schöpfer der Abenteuertruppe',
+    bio: `<p>Der Autor und Schöpfer der Abenteuertruppe begeistert sich für Kinderliteratur und die transformative Kraft von Geschichten. Seine Bücher, in mehreren Sprachen veröffentlicht und in vielen Ländern verkauft, bieten Kindern spannende Abenteuer mit eigener Identität und Themen, die für unsere Zeit relevant sind.</p><p>Mit zugänglichem Schreibstil und fesselnden Figuren verfolgt er ein klares Ziel: Kinder zum Lesen aus Freude zu bringen und Fantasie, Werte und Neugier zu fördern.</p><p>Heute sind bereits über 70 Titel auf Amazon verfügbar, darunter fiktionale Geschichten für Kinder und Jugendliche sowie Sachbücher für Erwachsene.</p><p>Die Reihen der Abenteuertruppe beinhalten Zeitreisen, verrückte Erfindungen, historische Entdeckungen und unglaubliche Orte auf der ganzen Welt — alles in einer Sprache, die für jede Altersgruppe geeignet ist.</p><p>"Ich möchte, dass jedes Kind ein Kapitel beendet und sofort das nächste lesen will. Denn wenn es diese Freude entdeckt, kann sie ihm niemand mehr nehmen."</p>`,
+    btn1: '📚 Alle Bücher ansehen',
+    btn2: 'Auf Amazon ansehen →'
+  },
+  es: {
+    title: 'Autor | Guilherme Miranda de Aguiar',
+    nav: ['Libros','Universo','Blog','Catálogo','Autor'],
+    mobile: ['🏠 Inicio','📚 Catálogo','📝 Blog','✍️ Autor'],
+    tag: '✨ Sobre el autor',
+    role: 'Autor · Creador de Escuadrón Aventura',
+    bio: `<p>Creador de la serie Escuadrón Aventura, este autor está apasionado por la literatura infantil y por el poder transformador de las historias. Sus libros, publicados en varios idiomas y vendidos en países de todo el mundo, ofrecen a los niños aventuras emocionantes, con identidad propia y temas relevantes para nuestro tiempo.</p><p>Con una escritura accesible y personajes cautivadores, su misión es clara: hacer que los niños lean por placer y desarrollen imaginación, valores y curiosidad.</p><p>Hoy ya son más de 70 títulos disponibles en Amazon, entre historias de ficción para niños y jóvenes y obras de no ficción para adultos.</p><p>Las series de Escuadrón Aventura incluyen viajes en el tiempo, inventos locos, descubrimientos históricos y lugares increíbles por el planeta — todo con lenguaje apropiado para cada edad.</p><p>"Quiero que cada niño termine un capítulo con ganas de leer el siguiente. Porque cuando descubre ese placer, nadie se lo quita."</p>`,
+    btn1: '📚 Ver todos los libros',
+    btn2: 'Ver en Amazon →'
+  },
+  it: {
+    title: 'Autore | Guilherme Miranda de Aguiar',
+    nav: ['Libri','Universo','Blog','Catalogo','Autore'],
+    mobile: ['🏠 Home','📚 Catalogo','📝 Blog','✍️ Autore'],
+    tag: '✨ Sull’autore',
+    role: 'Autore · Creatore della Squadra Avventura',
+    bio: `<p>Creatore della serie Squadra Avventura, questo autore è appassionato di letteratura per l’infanzia e del potere trasformativo delle storie. I suoi libri, pubblicati in più lingue e venduti in paesi di tutto il mondo, offrono ai bambini avventure emozionanti, con identità propria e temi rilevanti per il nostro tempo.</p><p>Con una scrittura accessibile e personaggi coinvolgenti, la sua missione è chiara: far leggere i bambini per piacere e sviluppare immaginazione, valori e curiosità.</p><p>Oggi sono già oltre 70 i titoli disponibili su Amazon, tra storie di narrativa per bambini e ragazzi e opere di saggistica per adulti.</p><p>Le serie della Squadra Avventura includono viaggi nel tempo, invenzioni folli, scoperte storiche e luoghi incredibili nel mondo — tutto con un linguaggio adatto a ogni fascia d’età.</p><p>"Voglio che ogni bambino finisca un capitolo con la voglia di leggere il prossimo. Perché quando scopre quel piacere, nessuno glielo toglie più."</p>`,
+    btn1: '📚 Vedi tutti i libri',
+    btn2: 'Vedi su Amazon →'
+  },
+  fr: {
+    title: 'Auteur | Guilherme Miranda de Aguiar',
+    nav: ['Livres','Univers','Blog','Catalogue','Auteur'],
+    mobile: ['🏠 Accueil','📚 Catalogue','📝 Blog','✍️ Auteur'],
+    tag: '✨ À propos de l’auteur',
+    role: 'Auteur · Créateur de l’Équipe Aventure',
+    bio: `<p>Créateur de la série Équipe Aventure, cet auteur est passionné par la littérature jeunesse et par le pouvoir transformateur des histoires. Ses livres, publiés en plusieurs langues et vendus dans des pays du monde entier, offrent aux enfants des aventures passionnantes, avec une identité propre et des thèmes pertinents pour notre époque.</p><p>Avec une écriture accessible et des personnages captivants, sa mission est claire : amener les enfants à lire par plaisir et à développer imagination, valeurs et curiosité.</p><p>Aujourd’hui, plus de 70 titres sont déjà disponibles sur Amazon, entre fictions pour enfants et adolescents et ouvrages de non-fiction pour adultes.</p><p>Les séries de l’Équipe Aventure incluent des voyages dans le temps, des inventions folles, des découvertes historiques et des lieux incroyables autour du globe — toujours avec un langage adapté à chaque tranche d’âge.</p><p>"Je veux que chaque enfant termine un chapitre avec l’envie de lire le suivant. Car quand il découvre ce plaisir, plus personne ne peut le lui enlever."</p>`,
+    btn1: '📚 Voir tous les livres',
+    btn2: 'Voir sur Amazon →'
+  },
+  ja: {
+    title: '著者 | Guilherme Miranda de Aguiar',
+    nav: ['本','世界観','ブログ','カタログ','著者'],
+    mobile: ['🏠 ホーム','📚 カタログ','📝 ブログ','✍️ 著者'],
+    tag: '✨ 著者について',
+    role: '著者 · アドベンチャー・チームの創作者',
+    bio: `<p>アドベンチャー・チームシリーズの作者は、児童文学と物語が持つ変革の力に情熱を注いでいます。作品は複数言語で出版され、世界各国で読まれ、子どもたちに独自の世界観と現代的なテーマを持つ胸躍る冒険を届けています。</p><p>読みやすい文章と魅力的な登場人物で、子どもが読書を「義務」ではなく「楽しみ」として続け、想像力・価値観・好奇心を育てることを目指しています。</p><p>現在、Amazonでは70冊以上の作品が公開されており、子ども・若者向けのフィクションから大人向けノンフィクションまで展開しています。</p><p>アドベンチャー・チームの各シリーズは、タイムトラベル、ユニークな発明、歴史的発見、世界の驚くべき場所を扱い、年齢に合わせた表現で物語を届けます。</p><p>「子どもたちには、1章を読み終えたら次を読みたくなる体験をしてほしい。いったんその喜びを知れば、誰にも奪えないからです。」</p>`,
+    btn1: '📚 すべての本を見る',
+    btn2: 'Amazonで見る →'
+  }
+};
+
+window.applyPageTranslations = function(lang){
+  const t = AUTHOR_TRANSLATIONS[lang] || AUTHOR_TRANSLATIONS.pt;
+  document.title = t.title;
+  document.querySelectorAll('.nav-links a').forEach((el,i)=>{ if(t.nav[i]) el.textContent = t.nav[i]; });
+  document.querySelectorAll('.mobile-menu .mc').forEach((el,i)=>{ if(t.mobile[i]) el.textContent = t.mobile[i]; });
+  const tag = document.querySelector('.author-tag');
+  const role = document.querySelector('.author-role');
+  const bio = document.querySelector('.author-bio');
+  if(tag) tag.textContent = t.tag;
+  if(role) role.textContent = t.role;
+  if(bio) bio.innerHTML = t.bio;
+  const buttons = document.querySelectorAll('.author-btns a');
+  if(buttons[0]) buttons[0].textContent = t.btn1;
+  if(buttons[1]) buttons[1].textContent = t.btn2;
+};
+
+(function(){const c=document.getElementById('stars');const n=window.innerWidth<600?60:120;for(let i=0;i<n;i++){const s=document.createElement('div');s.className='star';const z=Math.random()*2.5+.5;s.style.cssText=`width:${z}px;height:${z}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${Math.random()*5}s;--op:${.3+Math.random()*.5};`;c.appendChild(s);}})();
+const burger=document.getElementById('burger'),mm=document.getElementById('mobile-menu');
+burger.addEventListener('click',()=>{burger.classList.toggle('open');mm.classList.toggle('open');});
+document.querySelectorAll('.mc').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mm.classList.remove('open');}));
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+if(window.siteI18n) window.siteI18n.applyCurrentLanguage();
+</script>
+</body>
+</html>

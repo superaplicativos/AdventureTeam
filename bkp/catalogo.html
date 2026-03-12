@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Completo | Turma da Aventura</title>
+<meta name="description" content="Mais de 70 livros infantis e juvenis da Turma da Aventura — filtre por série, idioma e formato. Compre na Amazon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Lora',serif;background:#0e0a1a;color:#f0e8d0;overflow-x:hidden;min-height:100vh;width:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* stars */
+.stars-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;border-radius:50%;background:#fff;animation:twinkle var(--d,3s) ease-in-out infinite;animation-delay:var(--delay,0s);opacity:0}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:var(--op,.6);transform:scale(1.3)}}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(14,10,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,200,80,.12)}
+.nav-inner{display:flex;align-items:center;height:64px;gap:16px}
+.logo{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.25rem;color:#ffc840;flex-shrink:0;margin-right:auto}
+.logo span{color:#ff7b54}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-family:'Baloo 2',cursive;font-size:.85rem;font-weight:600;color:rgba(240,232,208,.6);transition:color .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.on{color:#ffc840}
+.nav-langs{display:flex;gap:6px;flex-shrink:0}
+.nav-langs a{font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:700;color:rgba(240,232,208,.4);padding:3px 7px;border:1px solid rgba(255,200,80,.15);border-radius:4px;transition:all .2s}
+.nav-langs a:hover,.nav-langs a.on{color:#ffc840;border-color:rgba(255,200,80,.5);background:rgba(255,200,80,.08)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;flex-shrink:0}
+.burger span{display:block;width:22px;height:2px;background:#ffc840;border-radius:2px;transition:all .3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;flex-direction:column;background:rgba(14,10,26,.98);border-top:1px solid rgba(255,200,80,.1);padding:20px;gap:16px;position:fixed;top:64px;left:0;right:0;z-index:199}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:#f0e8d0;padding:8px 0;border-bottom:1px solid rgba(255,200,80,.1)}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-langs{display:flex;gap:8px;flex-wrap:wrap;padding-top:4px}
+.mobile-langs a{font-size:.8rem;padding:5px 12px;border:1px solid rgba(255,200,80,.3);border-radius:20px;color:#ffc840;font-family:'Baloo 2',cursive;font-weight:700}
+
+/* page hero */
+.page-hero{position:relative;z-index:1;padding:110px 20px 56px;text-align:center;border-bottom:1px solid rgba(255,200,80,.1);background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(120,60,200,.2) 0%,transparent 70%)}
+.page-hero-tag{font-family:'Baloo 2',cursive;font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#ff7b54;margin-bottom:10px}
+.page-hero h1{font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2rem,5vw,3.5rem);color:#fff;margin-bottom:10px}
+.page-hero h1 em{font-style:normal;color:#ffc840}
+.page-hero p{color:rgba(240,232,208,.55);font-size:1.05rem;max-width:500px;margin:0 auto}
+
+/* filter bar */
+.filter-bar{position:sticky;top:64px;z-index:100;background:rgba(14,10,26,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,200,80,.1);padding:14px 0}
+.filter-inner{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.filter-label{font-family:'Baloo 2',cursive;font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(240,232,208,.35);flex-shrink:0}
+.filter-group{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.f-btn{font-family:'Baloo 2',cursive;font-size:.72rem;font-weight:700;padding:5px 14px;border:1px solid rgba(255,200,80,.18);border-radius:20px;background:transparent;color:rgba(240,232,208,.5);cursor:pointer;transition:all .2s;white-space:nowrap}
+.f-btn:hover,.f-btn.on{border-color:rgba(255,200,80,.6);color:#ffc840;background:rgba(255,200,80,.08)}
+.filter-sep{width:1px;height:22px;background:rgba(255,200,80,.1);flex-shrink:0}
+.search-wrap{margin-left:auto;flex-shrink:0}
+.search-input{background:rgba(255,255,255,.05);border:1px solid rgba(255,200,80,.18);border-radius:20px;padding:6px 16px;color:#f0e8d0;font-family:'Baloo 2',cursive;font-size:.82rem;width:200px;outline:none;transition:border-color .2s}
+.search-input::placeholder{color:rgba(240,232,208,.3)}
+.search-input:focus{border-color:rgba(255,200,80,.5)}
+
+/* catalog */
+.catalog{position:relative;z-index:1;padding:48px 0 80px}
+.series-block{margin-bottom:56px}
+.series-block-header{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:14px;border-bottom:1px solid rgba(255,200,80,.1)}
+.series-emoji-sm{font-size:1.4rem}
+.series-block-header h2{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.25rem;color:#fff}
+.series-block-header .lang-pill{font-family:'Baloo 2',cursive;font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(255,200,64,.1);border:1px solid rgba(255,200,64,.25);color:#ffc840}
+.series-count{font-family:'Baloo 2',cursive;font-size:.7rem;color:rgba(240,232,208,.3);margin-left:auto}
+
+.books-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.book-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,200,80,.1);border-radius:14px;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;flex-direction:column}
+.book-card:hover{transform:translateY(-5px);border-color:rgba(255,200,80,.4);box-shadow:0 12px 32px rgba(0,0,0,.4)}
+.book-card[data-hidden="true"]{display:none}
+.book-cover{width:100%;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',cursive;font-weight:800;font-size:.7rem;color:rgba(255,255,255,.9);text-align:center;padding:14px 8px;line-height:1.4;position:relative}
+.book-cover::after{content:'📖';position:absolute;bottom:8px;right:8px;font-size:1.2rem;opacity:.35}
+.bc1{background:linear-gradient(145deg,#4a1259,#8b2fc9)}
+.bc2{background:linear-gradient(145deg,#0d3b6e,#1a7abf)}
+.bc3{background:linear-gradient(145deg,#6b2a00,#c45000)}
+.bc4{background:linear-gradient(145deg,#0a4a2a,#1a8a50)}
+.bc5{background:linear-gradient(145deg,#4a0a0a,#9b1a1a)}
+.bc6{background:linear-gradient(145deg,#1a1a5e,#3a3abf)}
+.bc7{background:linear-gradient(145deg,#3a2a00,#8b6a00)}
+.bc8{background:linear-gradient(145deg,#0a3a3a,#0a8a8a)}
+.book-info{padding:12px;flex:1;display:flex;flex-direction:column;gap:5px}
+.book-series-lbl{font-family:'Baloo 2',cursive;font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ff7b54}
+.book-title{font-family:'Baloo 2',cursive;font-size:.88rem;font-weight:700;color:#fff;line-height:1.3}
+.book-lang-lbl{font-family:'Baloo 2',cursive;font-size:.6rem;color:rgba(240,232,208,.35);text-transform:uppercase;letter-spacing:.08em}
+.book-formats{display:flex;gap:4px;flex-wrap:wrap}
+.fmt{font-family:'Baloo 2',cursive;font-size:.58rem;font-weight:700;padding:2px 7px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(240,232,208,.5)}
+.book-price-lbl{font-family:'Baloo 2',cursive;font-size:.78rem;font-weight:600;color:#ffc840;margin-top:2px}
+.book-buy-btn{display:block;text-align:center;font-family:'Baloo 2',cursive;font-weight:700;font-size:.75rem;padding:9px;background:rgba(255,200,64,.1);border:1px solid rgba(255,200,64,.22);border-radius:8px;color:#ffc840;margin-top:auto;transition:background .2s,border-color .2s}
+.book-buy-btn:hover{background:rgba(255,200,64,.2);border-color:rgba(255,200,64,.55)}
+
+.no-results{display:none;text-align:center;padding:60px 20px}
+.no-results.show{display:block}
+.no-results p{font-family:'Baloo 2',cursive;font-size:1.1rem;color:rgba(240,232,208,.4)}
+
+/* btn */
+.btn-magic{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2',cursive;font-weight:700;font-size:1rem;padding:14px 28px;border-radius:50px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;white-space:nowrap}
+.btn-magic:hover{transform:translateY(-3px)}
+.btn-primary{background:linear-gradient(135deg,#ff7b54,#ffc840);color:#1a0a00;box-shadow:0 4px 20px rgba(255,150,60,.4)}
+.btn-primary:hover{box-shadow:0 8px 30px rgba(255,150,60,.55)}
+.btn-outline{background:transparent;color:#ffc840;border:2px solid rgba(255,200,64,.5)}
+.btn-outline:hover{border-color:#ffc840;background:rgba(255,200,64,.08)}
+
+/* footer */
+footer{position:relative;z-index:1;background:rgba(0,0,0,.4);border-top:1px solid rgba(255,200,80,.1);padding:48px 0 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer-brand{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.2rem;color:#ffc840;margin-bottom:10px}
+.footer-brand span{color:#ff7b54}
+.footer-desc{font-size:.95rem;color:rgba(240,232,208,.4);line-height:1.65}
+.footer-col h4{font-family:'Baloo 2',cursive;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ffc840;margin-bottom:14px}
+.footer-col ul{display:flex;flex-direction:column;gap:8px}
+.footer-col ul li a{font-size:.92rem;color:rgba(240,232,208,.45);transition:color .2s}
+.footer-col ul li a:hover{color:#ffc840}
+.footer-bottom{border-top:1px solid rgba(255,200,80,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.85rem;color:rgba(240,232,208,.3)}
+.footer-bottom-langs{display:flex;gap:12px}
+.footer-bottom-langs a{font-size:.82rem;color:rgba(240,232,208,.35);transition:color .2s}
+.footer-bottom-langs a:hover{color:#ffc840}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:900px){
+  .nav-links{display:none}.burger{display:flex}.nav-langs{display:none}
+  .books-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .filter-inner{gap:8px}
+  .search-wrap{width:100%;margin-left:0}
+  .search-input{width:100%}
+}
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  .books-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .book-info{padding:10px}
+  .footer-grid{grid-template-columns:1fr;gap:20px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .f-btn{font-size:.65rem;padding:4px 10px}
+}
+</style>
+</head>
+<body>
+<div class="stars-bg" id="stars"></div>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html">✨ Turma da <span>Aventura</span></a>
+    <div class="nav-links">
+      <a href="index.html#livros">Livros</a>
+      <a href="index.html#universo">Universo</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="catalogo.html" class="on">Catálogo</a>
+      <a href="autor.html">Autor</a>
+    </div>
+    <div class="nav-langs">
+      <a href="#" class="on">PT</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a><a href="#">JP</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mc">🏠 Início</a>
+  <a href="index.html#livros" class="mc">📚 Livros</a>
+  <a href="blog/index.html" class="mc">📝 Blog</a>
+  <a href="autor.html" class="mc">✍️ Autor</a>
+  <div class="mobile-langs">
+    <a href="#" class="on">PT-BR</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a><a href="#">JP</a>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="wrap">
+    <p class="page-hero-tag">📚 Catálogo completo</p>
+    <h1>Todos os <em>livros</em></h1>
+    <p>Mais de 70 títulos em 5 idiomas — filtre por série, idioma ou busque pelo título. Compre diretamente na Amazon.</p>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="wrap filter-inner">
+    <span class="filter-label">Idioma:</span>
+    <div class="filter-group" id="flang">
+      <button class="f-btn on" data-val="all">Todos</button>
+      <button class="f-btn" data-val="PT">🇧🇷 PT</button>
+      <button class="f-btn" data-val="EN">🇺🇸 EN</button>
+      <button class="f-btn" data-val="ES">🇪🇸 ES</button>
+      <button class="f-btn" data-val="DE">🇩🇪 DE</button>
+    </div>
+    <div class="filter-sep"></div>
+    <span class="filter-label">Série:</span>
+    <div class="filter-group" id="fseries">
+      <button class="f-btn on" data-val="all">Todas</button>
+      <button class="f-btn" data-val="viajantes">⏳ Viajantes</button>
+      <button class="f-btn" data-val="invencoes">💡 Invenções</button>
+      <button class="f-btn" data-val="lugares">🗺 Lugares</button>
+      <button class="f-btn" data-val="calixto">🤣 Calixto</button>
+      <button class="f-btn" data-val="aventura">💛 Aventura</button>
+      <button class="f-btn" data-val="outros">📦 Outros</button>
+    </div>
+    <div class="search-wrap">
+      <input class="search-input" id="search" type="search" placeholder="🔍 Buscar título…">
+    </div>
+  </div>
+</div>
+
+<section class="catalog">
+  <div class="wrap">
+
+    <!-- INVENÇÕES PT -->
+    <div class="series-block reveal" data-block="invencoes">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">💡</span>
+        <h2>Turma da Aventura – Invenções</h2>
+        <span class="lang-pill">PT</span>
+        <span class="series-count">4 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="invencoes"><div class="book-cover bc1">⚙️ A Imprensa de Gutenberg</div><div class="book-info"><div class="book-series-lbl">Invenções</div><div class="book-title">A Imprensa de Gutenberg</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $2,99 · Imp. $14,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GK1349T8" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="invencoes"><div class="book-cover bc2">💡 A Invenção da Lâmpada</div><div class="book-info"><div class="book-series-lbl">Invenções</div><div class="book-title">A Invenção da Lâmpada</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $3,99 · Imp. $12,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GJSCHXR5" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="invencoes"><div class="book-cover bc3">🛞 A Invenção da Roda</div><div class="book-info"><div class="book-series-lbl">Invenções</div><div class="book-title">A Invenção da Roda</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $3,99 · Imp. $9,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GJ6ZYCSL" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="invencoes"><div class="book-cover bc4">⚙️ A Máquina do Tempo</div><div class="book-info"><div class="book-series-lbl">Invenções</div><div class="book-title">A Máquina do Tempo</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $3,99 · Imp. $9,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GHJKMPNK" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- VIAJANTES PT -->
+    <div class="series-block reveal" data-block="viajantes">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">⏳</span>
+        <h2>Turma da Aventura – Viajantes do Tempo</h2>
+        <span class="lang-pill">PT</span>
+        <span class="series-count">7 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc5">🏰 Ecos de Constantinopla</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Ecos de Constantinopla</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $14,00</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GFCZPQ1R" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc6">🎨 Enigma no Renascimento</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Enigma no Renascimento</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $2,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FSVVQMND" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc1">🏰 Mistério no Castelo Medieval</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Mistério no Castelo Medieval</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $2,49 · Imp. $8,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FSQ3JP52" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc2">🌌 O Despertar dos Sonhos</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">O Despertar dos Sonhos no Futuro</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FYCSCMPK" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc3">🏛 Uma Aventura em Roma</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Uma Aventura em Roma</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span></div><div class="book-price-lbl">eBook $1,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FJ7BLCBX" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc4">🔺 Pirâmides do Tempo</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Turma da Aventura e as Pirâmides do Tempo</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $5,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FH25SNPS" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="viajantes"><div class="book-cover bc5">⚙️ A Máquina do Tempo</div><div class="book-info"><div class="book-series-lbl">Viajantes do Tempo</div><div class="book-title">Turma da Aventura e a Máquina do Tempo</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $3,49 · Imp. $5,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FGWKWG88" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- LUGARES INCRÍVEIS -->
+    <div class="series-block reveal" data-block="lugares">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">🗺</span>
+        <h2>Lugares Incríveis</h2>
+        <span class="lang-pill">PT</span><span class="lang-pill">EN</span>
+        <span class="series-count">3 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="lugares"><div class="book-cover bc6">🌊 O Segredo de Atlântida</div><div class="book-info"><div class="book-series-lbl">Lugares Incríveis</div><div class="book-title">O Segredo de Atlântida</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,39</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0FT6J8MSB" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="lugares"><div class="book-cover bc1">🌊 The Secret of Atlantis</div><div class="book-info"><div class="book-series-lbl">Incredible Places</div><div class="book-title">Adventure Team: The Secret of Atlantis</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $1.49 · PB $6.99</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0FT77774D" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="lugares"><div class="book-cover bc2">🏰 Ecos de Constantinopla</div><div class="book-info"><div class="book-series-lbl">Lugares Incríveis</div><div class="book-title">Ecos de Constantinopla</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $14,00</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GFCZPQ1R" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- TURMA DA AVENTURA principal -->
+    <div class="series-block reveal" data-block="aventura">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">💛</span>
+        <h2>Turma da Aventura</h2>
+        <span class="lang-pill">PT</span>
+        <span class="series-count">8 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc3">🌟 A Incrível Máquina de Sonhos</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura · 7 anos</div><div class="book-title">A Incrível Máquina de Sonhos</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,59 · Imp. $7,29</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DWQSXCW3" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc4">🏙 A Cidade Sem Pais</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura</div><div class="book-title">A Cidade Sem Pais</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DXZ94MQ5" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc5">🌋 A Ilha dos Vulcões</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura</div><div class="book-title">A Ilha dos Vulcões</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $5,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DWX4S79Q" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc6">⭐ O Segredo da Estrela Perdida</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura</div><div class="book-title">O Segredo da Estrela Perdida</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DWVB5TTB" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc7">🪞 O Espelho dos Medos</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura</div><div class="book-title">O Espelho dos Medos</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DWV1G3CT" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc8">⏸ O Dia que Tudo Parou</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura</div><div class="book-title">O Dia que Tudo Parou</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DWZH6KTH" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc1">🔍 O Enigma do Labirinto Sombrio</div><div class="book-info"><div class="book-series-lbl">Turma da Aventura · 11 anos</div><div class="book-title">O Enigma do Labirinto Sombrio</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DY5C31JV" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="aventura"><div class="book-cover bc2">🔍 O Enigma do Explorador Perdido</div><div class="book-info"><div class="book-series-lbl">Standalone · 12 anos</div><div class="book-title">O Enigma do Explorador Perdido</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,99 · Imp. $9,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DTCQ2KNR" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- CALIXTO -->
+    <div class="series-block reveal" data-block="calixto">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">🤣</span>
+        <h2>As Aventuras de Calixto Salsicha</h2>
+        <span class="lang-pill">PT</span>
+        <span class="series-count">2 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="calixto"><div class="book-cover bc3">🏘 O Golpe do Terreno Fantasma</div><div class="book-info"><div class="book-series-lbl">Calixto Salsicha</div><div class="book-title">O Golpe do Terreno Fantasma</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $8,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DJFW54VF" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="calixto"><div class="book-cover bc4">🐅 O Golpe do Tigrinho</div><div class="book-info"><div class="book-series-lbl">Calixto Salsicha</div><div class="book-title">O Golpe do Tigrinho</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span></div><div class="book-price-lbl">eBook $1,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DJG6LQ1M" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- EN -->
+    <div class="series-block reveal" data-block="viajantes">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">🇺🇸</span>
+        <h2>Adventure Team – Time Travelers</h2>
+        <span class="lang-pill">EN</span>
+        <span class="series-count">8 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="EN" data-series="viajantes"><div class="book-cover bc5">🏰 Echoes of Constantinople</div><div class="book-info"><div class="book-series-lbl">Adventure Team</div><div class="book-title">The Echoes of Constantinople</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $1.49 · PB $9.00</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0GF9JK2MT" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="viajantes"><div class="book-cover bc6">⚙️ The Time Machine</div><div class="book-info"><div class="book-series-lbl">Adventure Team</div><div class="book-title">Adventure Team and the Time Machine</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $2.49 · PB $6.59</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0FYKNGZK3" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="viajantes"><div class="book-cover bc1">🎨 Enigma in the Renaissance</div><div class="book-info"><div class="book-series-lbl">Adventure Team</div><div class="book-title">Enigma in the Renaissance</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $2.49 · PB $5.99</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0FZSW5YNF" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="viajantes"><div class="book-cover bc2">🏰 Mystery in the Medieval Castle</div><div class="book-info"><div class="book-series-lbl">Adventure Team</div><div class="book-title">Mystery in the Medieval Castle</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $2.49 · PB $5.99</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0FZH24R2V" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="viajantes"><div class="book-cover bc3">🏛 An Adventure in Rome</div><div class="book-info"><div class="book-series-lbl">Adventure Team</div><div class="book-title">An Adventure in Rome</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Paperback</span></div><div class="book-price-lbl">eBook $2.49 · PB $5.99</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0FZFS34FB" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- ES -->
+    <div class="series-block reveal" data-block="viajantes">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">🇪🇸</span>
+        <h2>Equipo Aventura – Viajeros del Tiempo</h2>
+        <span class="lang-pill">ES</span>
+        <span class="series-count">7 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="ES" data-series="viajantes"><div class="book-cover bc4">⚙️ La Máquina del Tiempo</div><div class="book-info"><div class="book-series-lbl">Equipo Aventura</div><div class="book-title">Equipo Aventura Y La Máquina del Tiempo</div><div class="book-lang-lbl">Español</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impreso</span></div><div class="book-price-lbl">eBook $2,49 · Imp. $5,99</div><a class="book-buy-btn" href="https://www.amazon.es/dp/B0FYND9MT9" target="_blank" rel="noopener sponsored">Comprar en Amazon →</a></div></article>
+        <article class="book-card" data-lang="ES" data-series="viajantes"><div class="book-cover bc5">🎨 Enigma en el Renacimiento</div><div class="book-info"><div class="book-series-lbl">Equipo Aventura</div><div class="book-title">Enigma en el Renacimiento</div><div class="book-lang-lbl">Español</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impreso</span></div><div class="book-price-lbl">eBook $3,49 · Imp. $6,99</div><a class="book-buy-btn" href="https://www.amazon.es/dp/B0G32HHVRN" target="_blank" rel="noopener sponsored">Comprar en Amazon →</a></div></article>
+        <article class="book-card" data-lang="ES" data-series="viajantes"><div class="book-cover bc6">🏛 Una Aventura en Roma</div><div class="book-info"><div class="book-series-lbl">Equipo Aventura</div><div class="book-title">Una Aventura en Roma</div><div class="book-lang-lbl">Español</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impreso</span></div><div class="book-price-lbl">eBook $2,49 · Imp. $6,99</div><a class="book-buy-btn" href="https://www.amazon.es/dp/B0G1LFHY9R" target="_blank" rel="noopener sponsored">Comprar en Amazon →</a></div></article>
+        <article class="book-card" data-lang="ES" data-series="viajantes"><div class="book-cover bc1">🏰 Misterio en el Castillo Medieval</div><div class="book-info"><div class="book-series-lbl">Equipo Aventura</div><div class="book-title">Misterio en el Castillo Medieval</div><div class="book-lang-lbl">Español</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impreso</span></div><div class="book-price-lbl">eBook $3,49 · Imp. $6,99</div><a class="book-buy-btn" href="https://www.amazon.es/dp/B0CTHRRL5X" target="_blank" rel="noopener sponsored">Comprar en Amazon →</a></div></article>
+        <article class="book-card" data-lang="ES" data-series="viajantes"><div class="book-cover bc2">🔺 Las Pirámides del Tiempo</div><div class="book-info"><div class="book-series-lbl">Equipo Aventura</div><div class="book-title">Equipo Aventura y las Pirámides del Tiempo</div><div class="book-lang-lbl">Español</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impreso</span></div><div class="book-price-lbl">eBook $3,49 · Imp. $7,99</div><a class="book-buy-btn" href="https://www.amazon.es/dp/B0G198X32P" target="_blank" rel="noopener sponsored">Comprar en Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="series-block reveal" data-block="viajantes">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">🇩🇪</span>
+        <h2>Die Abenteuerbande Zeitreisende</h2>
+        <span class="lang-pill">DE</span>
+        <span class="series-count">4 títulos</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="DE" data-series="viajantes"><div class="book-cover bc3">🔺 Pyramiden der Zeit</div><div class="book-info"><div class="book-series-lbl">Abenteuerbande</div><div class="book-title">Abenteuerbande und die Pyramiden der Zeit</div><div class="book-lang-lbl">Deutsch</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Taschenbuch</span></div><div class="book-price-lbl">eBook $1,99 · TB $5,99</div><a class="book-buy-btn" href="https://www.amazon.de/dp/B0GGGP8Z69" target="_blank" rel="noopener sponsored">Bei Amazon kaufen →</a></div></article>
+        <article class="book-card" data-lang="DE" data-series="viajantes"><div class="book-cover bc4">🏛 Ein Abenteuer in Rom</div><div class="book-info"><div class="book-series-lbl">Abenteuerbande</div><div class="book-title">Abenteuerbande: Ein Abenteuer in Rom</div><div class="book-lang-lbl">Deutsch</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Taschenbuch</span></div><div class="book-price-lbl">eBook $2,99 · TB $6,49</div><a class="book-buy-btn" href="https://www.amazon.de/dp/B0GGHBN998" target="_blank" rel="noopener sponsored">Bei Amazon kaufen →</a></div></article>
+        <article class="book-card" data-lang="DE" data-series="viajantes"><div class="book-cover bc5">🦕 Zeitmaschine & Dinosaurier</div><div class="book-info"><div class="book-series-lbl">Abenteuerbande</div><div class="book-title">Die Zeitmaschine und das Geheimnis der Dinosaurier</div><div class="book-lang-lbl">Deutsch</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Taschenbuch</span></div><div class="book-price-lbl">eBook $3,49 · TB $6,49</div><a class="book-buy-btn" href="https://www.amazon.de/dp/B0G24XMZ9X" target="_blank" rel="noopener sponsored">Bei Amazon kaufen →</a></div></article>
+      </div>
+    </div>
+
+    <!-- OUTROS -->
+    <div class="series-block reveal" data-block="outros">
+      <div class="series-block-header">
+        <span class="series-emoji-sm">📦</span>
+        <h2>Outros títulos</h2>
+        <span class="lang-pill">PT</span><span class="lang-pill">EN</span>
+        <span class="series-count">Não-ficção · Standalone · Colorir</span>
+      </div>
+      <div class="books-grid">
+        <article class="book-card" data-lang="PT" data-series="outros"><div class="book-cover bc7">👶 Enciclopédia Atividades 0-3 anos</div><div class="book-info"><div class="book-series-lbl">Não-ficção</div><div class="book-title">Enciclopédia de Atividades Infantis (0-3 anos)</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,99 · Imp. $9,99</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0GMBF91HH" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="outros"><div class="book-cover bc8">🤖 Geração Ciborgue</div><div class="book-info"><div class="book-series-lbl">Não-ficção · IA</div><div class="book-title">Geração Ciborgue</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $6,49</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DJCSV1DK" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="PT" data-series="outros"><div class="book-cover bc1">💥 A Arte do Poder Disruptivo</div><div class="book-info"><div class="book-series-lbl">Não-ficção · Negócios</div><div class="book-title">A Arte do Poder Disruptivo</div><div class="book-lang-lbl">Português</div><div class="book-formats"><span class="fmt">eBook</span><span class="fmt">Impresso</span></div><div class="book-price-lbl">eBook $1,49 · Imp. $18,00</div><a class="book-buy-btn" href="https://www.amazon.com.br/dp/B0DJ3M63XP" target="_blank" rel="noopener sponsored">Comprar na Amazon →</a></div></article>
+        <article class="book-card" data-lang="EN" data-series="outros"><div class="book-cover bc2">🎨 Graffiti Dreams</div><div class="book-info"><div class="book-series-lbl">Coloring Book</div><div class="book-title">Graffiti Dreams: A Coloring Journey</div><div class="book-lang-lbl">English</div><div class="book-formats"><span class="fmt">Paperback</span></div><div class="book-price-lbl">$25.00</div><a class="book-buy-btn" href="https://www.amazon.com/dp/B0DGCNHV7Y" target="_blank" rel="noopener sponsored">Buy on Amazon →</a></div></article>
+      </div>
+    </div>
+
+    <div class="no-results" id="no-results"><p>😔 Nenhum resultado. Tente outro filtro ou busca.</p></div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-brand">✨ Turma da <span>Aventura</span></div><p class="footer-desc">Catálogo completo — mais de 70 títulos em 5 idiomas disponíveis na Amazon em eBook e impresso.</p></div>
+      <div class="footer-col"><h4>Navegar</h4><ul><li><a href="index.html">Início</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="autor.html">Autor</a></li></ul></div>
+      <div class="footer-col"><h4>Idiomas</h4><ul><li><a href="#">Português</a></li><li><a href="#">English</a></li><li><a href="#">Español</a></li><li><a href="#">Deutsch</a></li></ul></div>
+      <div class="footer-col"><h4>Amazon</h4><ul><li><a href="https://www.amazon.com.br" target="_blank" rel="noopener">🇧🇷 .com.br</a></li><li><a href="https://www.amazon.com" target="_blank" rel="noopener">🇺🇸 .com</a></li><li><a href="https://www.amazon.es" target="_blank" rel="noopener">🇪🇸 .es</a></li><li><a href="https://www.amazon.de" target="_blank" rel="noopener">🇩🇪 .de</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Guilherme Miranda de Aguiar · Links de afiliado Amazon</p><div class="footer-bottom-langs"><a href="#">PT</a><a href="#">EN</a><a href="#">ES</a><a href="#">DE</a></div></div>
+  </div>
+</footer>
+
+<script>
+(function(){const c=document.getElementById('stars');const n=window.innerWidth<600?60:120;for(let i=0;i<n;i++){const s=document.createElement('div');s.className='star';const z=Math.random()*2.5+.5;s.style.cssText=`width:${z}px;height:${z}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${Math.random()*5}s;--op:${.3+Math.random()*.5};`;c.appendChild(s);}})();
+const burger=document.getElementById('burger'),mm=document.getElementById('mobile-menu');
+burger.addEventListener('click',()=>{burger.classList.toggle('open');mm.classList.toggle('open');});
+document.querySelectorAll('.mc').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mm.classList.remove('open');}));
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// filters
+let aLang='all',aSeries='all',aSearch='';
+function applyFilters(){
+  const cards=document.querySelectorAll('.book-card');
+  let vis=0;
+  cards.forEach(c=>{
+    const ok=(aLang==='all'||c.dataset.lang===aLang)&&(aSeries==='all'||c.dataset.series===aSeries)&&(!aSearch||c.textContent.toLowerCase().includes(aSearch));
+    c.dataset.hidden=ok?'false':'true';
+    if(ok)vis++;
+  });
+  document.querySelectorAll('.series-block').forEach(b=>{
+    const any=[...b.querySelectorAll('.book-card')].some(c=>c.dataset.hidden==='false');
+    b.style.display=any?'':'none';
+  });
+  document.getElementById('no-results').classList.toggle('show',vis===0);
+}
+document.querySelectorAll('#flang .f-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#flang .f-btn').forEach(x=>x.classList.remove('on'));b.classList.add('on');aLang=b.dataset.val;applyFilters();}));
+document.querySelectorAll('#fseries .f-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#fseries .f-btn').forEach(x=>x.classList.remove('on'));b.classList.add('on');aSeries=b.dataset.val;applyFilters();}));
+document.getElementById('search').addEventListener('input',e=>{aSearch=e.target.value.trim().toLowerCase();applyFilters();});
+</script>
+</body>
+</html>

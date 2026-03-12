@@ -1,0 +1,2358 @@
+[
+  {
+    "lang": "PT",
+    "series": "invencoes",
+    "cover_img": "assets/capas/001-B0GK1349T8.jpg",
+    "series_label": "Turma da Aventura – Invenções",
+    "title": "Turma da Aventura: A Imprensa de Gutenberg",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,99 · Imp. 14,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GK1349T8",
+        "label": "eBook 2,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GKQ81R9G",
+        "label": "📖 14,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GK1349T8",
+        "label": "eBook 2,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GKQ81R9G",
+        "label": "📖 14,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "invencoes",
+    "cover_img": "assets/capas/002-B0GJSCHXR5.jpg",
+    "series_label": "Turma da Aventura – Invenções",
+    "title": "Turma da Aventura: A Invenção da Lâmpada",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 12,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GJSCHXR5",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GJSWK26X",
+        "label": "📖 12,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GJSCHXR5",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GJSWK26X",
+        "label": "📖 12,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "invencoes",
+    "cover_img": "assets/capas/003-B0GJ6ZYCSL.jpg",
+    "series_label": "Turma da Aventura – Invenções",
+    "title": "Turma da Aventura: A Invenção da Roda",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GJ6ZYCSL",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GJM75377",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GJ6ZYCSL",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GJM75377",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "invencoes",
+    "cover_img": "assets/capas/004-B0GHJKMPNK.jpg",
+    "series_label": "Turma da Aventura – Invenções",
+    "title": "Turma da Aventura: A Máquina do Tempo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GHJKMPNK",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GHJNTVSB",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GHJKMPNK",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GHJNTVSB",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/005-B0FYCSCMPK.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura: O Despertar dos Sonhos no Futuro",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FYCSCMPK",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FYDLNH91",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FYCSCMPK",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FYDLNH91",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/006-B0FSVVQMND.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura: Enigma no Renascimento",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FSVVQMND",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FSY6JWFY",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FSVVQMND",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FSY6JWFY",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/007-B0FSQ3JP52.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura: Mistério no Castelo Medieval",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 8,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FSQ3JP52",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FSSYHJSC",
+        "label": "📖 8,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FSQ3JP52",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FSSYHJSC",
+        "label": "📖 8,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/008-B0FJ7BLCBX.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura: Uma Aventura em Roma",
+    "formats": [
+      "eBook"
+    ],
+    "price_label": "eBook 1,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FJ7BLCBX",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FJ7BLCBX",
+        "label": "eBook 1,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/009-B0FH25SNPS.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura e as Pirâmides do Tempo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FH25SNPS",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FH2V7HQC",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FH25SNPS",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FH2V7HQC",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "viajantes",
+    "cover_img": "assets/capas/010-B0FGWKWG88.jpg",
+    "series_label": "Turma da Aventura – Viajantes do Tempo",
+    "title": "Turma da Aventura e a Máquina do Tempo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FGWKWG88",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FGYD5C1D",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FGWKWG88",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FGYD5C1D",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "lugares",
+    "cover_img": "assets/capas/011-B0GFCZPQ1R.jpg",
+    "series_label": "Lugares Incríveis",
+    "title": "Turma da Aventura: Ecos de Constantinopla",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 14,00",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GFCZPQ1R",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GFDZFHTT",
+        "label": "📖 14,00"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GFCZPQ1R",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GFDZFHTT",
+        "label": "📖 14,00"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "lugares",
+    "cover_img": "assets/capas/012-B0FT6J8MSB.jpg",
+    "series_label": "Lugares Incríveis",
+    "title": "Turma da Aventura: O Segredo de Atlântida",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,39",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FT6J8MSB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0FT8VCFHB",
+        "label": "📖 6,39"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FT6J8MSB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FT8VCFHB",
+        "label": "📖 6,39"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/013-B0DWZH6KTH.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: O Dia que Tudo Parou",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DWZH6KTH",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DX2437CP",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DWZH6KTH",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DX2437CP",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/014-B0DWQSXCW3.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: A Incrível Máquina de Sonhos",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,59 · Imp. 7,29",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DWQSXCW3",
+        "label": "eBook 1,59"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DWXLJVTX",
+        "label": "📖 7,29"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DWQSXCW3",
+        "label": "eBook 1,59"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DWXLJVTX",
+        "label": "📖 7,29"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/015-B0DXZ94MQ5.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: A Cidade Sem Pais",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DXZ94MQ5",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DY68MNBV",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DXZ94MQ5",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DY68MNBV",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/016-B0DY5C31JV.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: O Enigma do Labirinto Sombrio",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DY5C31JV",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DY67BVBF",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DY5C31JV",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DY67BVBF",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/017-B0DWX4S79Q.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: A Ilha dos Vulcões",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DWX4S79Q",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DWY2K9HK",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DWX4S79Q",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DWY2K9HK",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/018-B0DWVB5TTB.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: O Segredo da Estrela Perdida",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DWVB5TTB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DWXXH9WW",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DWVB5TTB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DWXXH9WW",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "aventura",
+    "cover_img": "assets/capas/019-B0DWV1G3CT.jpg",
+    "series_label": "Turma da Aventura",
+    "title": "Turma da Aventura: O Espelho dos Medos",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DWV1G3CT",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DWXS8P4T",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DWV1G3CT",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DWXS8P4T",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "calixto",
+    "cover_img": "assets/capas/020-B0DJFW54VF.jpg",
+    "series_label": "As Aventuras de Calixto Salsicha",
+    "title": "Calixto Salsicha: O Golpe do Terreno Fantasma",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 8,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DJFW54VF",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DJGNBB1K",
+        "label": "📖 8,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJFW54VF",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJGNBB1K",
+        "label": "📖 8,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "calixto",
+    "cover_img": "assets/capas/021-B0DJG6LQ1M.jpg",
+    "series_label": "As Aventuras de Calixto Salsicha",
+    "title": "Calixto Salsicha: O Golpe do Tigrinho",
+    "formats": [
+      "eBook"
+    ],
+    "price_label": "eBook 1,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DJG6LQ1M",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJG6LQ1M",
+        "label": "eBook 1,49"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/022-B0G11DJY6P.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team: The Awakening of Dreams in the Future",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,99 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G11DJY6P",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G13VQN5Q",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0G11DJY6P",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0G13VQN5Q",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/023-B0FZSW5YNF.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team: Enigma in the Renaissance",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FZSW5YNF",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FZX5QKP3",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FZSW5YNF",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FZX5QKP3",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/024-B0FZFS34FB.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team: An Adventure in Rome",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FZFS34FB",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FZHLMKTC",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FZFS34FB",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FZHLMKTC",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/025-B0FZH24R2V.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team: Mystery in the Medieval Castle",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FZH24R2V",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FZVBL8QM",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FZH24R2V",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FZVBL8QM",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/026-B0FZ9FPN89.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team and the Pyramids of Time",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FZ9FPN89",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FZ9T3ZNP",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FZ9FPN89",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FZ9T3ZNP",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/027-B0FYKNGZK3.jpg",
+    "series_label": "Adventure Team – Time Travelers",
+    "title": "Adventure Team and the Time Machine",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 6,59",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FYKNGZK3",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FYNT1X6Q",
+        "label": "📖 6,59"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FYKNGZK3",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FYNT1X6Q",
+        "label": "📖 6,59"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "viajantes",
+    "cover_img": "assets/capas/028-B0FGFNFPZ1.jpg",
+    "series_label": "Adventure Team",
+    "title": "The Adventure Gang: The Incredible Dream Machine",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FGFNFPZ1",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FGJQLP8F",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FGFNFPZ1",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FGJQLP8F",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "lugares",
+    "cover_img": "assets/capas/029-B0FT77774D.jpg",
+    "series_label": "Incredible Places",
+    "title": "Adventure Team: The Secret of Atlantis",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FT77774D",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FT8T8YYZ",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FT77774D",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FT8T8YYZ",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/030-B0G32HHVRN.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura: Enigma en el Renacimiento",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G32HHVRN",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G1YLCLQZ",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0G32HHVRN",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0G1YLCLQZ",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/031-B0G24B1LSB.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura: El despertar de los sueños en el futuro",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G24B1LSB",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G25GJ8PX",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0G24B1LSB",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0G25GJ8PX",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/032-B0G1LFHY9R.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura: Una aventura en Roma",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G1LFHY9R",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G1YHK27D",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0G1LFHY9R",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0G1YHK27D",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/033-B0CTHRRL5X.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura: Misterio en el Castillo Medieval",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0CTHRRL5X",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G1M6JQLD",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0CTHRRL5X",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0G1M6JQLD",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/034-B0G198X32P.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura y las pirámides del tiempo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 7,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G198X32P",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G1BL8NFR",
+        "label": "📖 7,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0G198X32P",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0G1BL8NFR",
+        "label": "📖 7,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "viajantes",
+    "cover_img": "assets/capas/035-B0FYND9MT9.jpg",
+    "series_label": "Equipo Aventura – Viajeros del Tiempo",
+    "title": "Equipo Aventura Y La Máquina del Tiempo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FYND9MT9",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FYQBP7GC",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0FYND9MT9",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0FYQBP7GC",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "viajantes",
+    "cover_img": "assets/capas/036-B0GGHBN998.jpg",
+    "series_label": "Die Abenteuerbande Zeitreisende",
+    "title": "Abenteuerbande: Ein Abenteuer in Rom",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,99 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GGHBN998",
+        "label": "eBook 2,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GGJ5JFWD",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "ebook",
+        "url": "https://www.amazon.de/dp/B0GGHBN998",
+        "label": "eBook 2,99"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0GGJ5JFWD",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "viajantes",
+    "cover_img": "assets/capas/037-B0GGGP8Z69.jpg",
+    "series_label": "Die Abenteuerbande Zeitreisende",
+    "title": "Abenteuerbande und die Pyramiden der Zeit",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,99 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GGGP8Z69",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GGJ7DBVT",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "ebook",
+        "url": "https://www.amazon.de/dp/B0GGGP8Z69",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0GGJ7DBVT",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "viajantes",
+    "cover_img": "assets/capas/038-B0G24XMZ9X.jpg",
+    "series_label": "Die Abenteuerbande Zeitreisende",
+    "title": "Die Abenteuerbande: Die Zeitmaschine und das Geheimnis der Dinosaurier",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0G24XMZ9X",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0G25F3FRM",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "ebook",
+        "url": "https://www.amazon.de/dp/B0G24XMZ9X",
+        "label": "eBook 3,49"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0G25F3FRM",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/039-B0GMBF91HH.jpg",
+    "series_label": "Standalone",
+    "title": "Enciclopédia de Atividades Infantis (0-3 anos)",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,99 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0GMBF91HH",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0GMCLQHW9",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GMBF91HH",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GMCLQHW9",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/040-B0DTCQ2KNR.jpg",
+    "series_label": "Standalone",
+    "title": "O Enigma do Explorador Perdido: Uma Aventura Inesquecível",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,99 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DTCQ2KNR",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DTFC9YV3",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DTCQ2KNR",
+        "label": "eBook 1,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DTFC9YV3",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/041-B0DJB9QR4B.jpg",
+    "series_label": "Standalone",
+    "title": "Viagem no Tempo: A Missão que Mudou o Futuro",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DJB9QR4B",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DJD9KWMM",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJB9QR4B",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJD9KWMM",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/042-B0FPDGWNTV.jpg",
+    "series_label": "Standalone",
+    "title": "IPP – Do Cliente ao Produto Ideal",
+    "formats": [
+      "eBook"
+    ],
+    "price_label": "eBook 1,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0FPDGWNTV",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FPDGWNTV",
+        "label": "eBook 1,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/043-B0DJ3M63XP.jpg",
+    "series_label": "Standalone",
+    "title": "A Arte do Poder Disruptivo",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 18,00",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DJ3M63XP",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DJ5DGDKL",
+        "label": "📖 18,00"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJ3M63XP",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJ5DGDKL",
+        "label": "📖 18,00"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/044-B0DJCSV1DK.jpg",
+    "series_label": "Standalone",
+    "title": "Geração Ciborgue",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DJCSV1DK",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DJDHWW6D",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJCSV1DK",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJDHWW6D",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/045-B0DHV2XYGB.jpg",
+    "series_label": "Standalone",
+    "title": "O Legado Inabalável do Border Collie",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0DHV2XYGB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0DJ8ZFB8Q",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DHV2XYGB",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJ8ZFB8Q",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "PT",
+    "series": "outros",
+    "cover_img": "assets/capas/046-B0CQXV9VRR.jpg",
+    "series_label": "Standalone",
+    "title": "Lance seu próprio Aplicativo de Entregas",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 6,99",
+    "links": [
+      {
+        "flag": "🇧🇷",
+        "type": "ebook",
+        "url": "https://www.amazon.com.br/dp/B0CQXV9VRR",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇧🇷",
+        "type": "print",
+        "url": "https://www.amazon.com.br/dp/B0CQY1BX1D",
+        "label": "📖 6,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0CQXV9VRR",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0CQY1BX1D",
+        "label": "📖 6,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/047-B0GF9JK2MT.jpg",
+    "series_label": "Standalone",
+    "title": "Adventure Team: The Echoes of Constantinople",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 9,00",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GF9JK2MT",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GFDWLG1V",
+        "label": "📖 9,00"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0GF9JK2MT",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0GFDWLG1V",
+        "label": "📖 9,00"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/048-B0FQFVH2DZ.jpg",
+    "series_label": "Standalone",
+    "title": "Books for kids about emotions: Adventure Team",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,39 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0FQFVH2DZ",
+        "label": "eBook 1,39"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0FQJTWVDL",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0FQFVH2DZ",
+        "label": "eBook 1,39"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0FQJTWVDL",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/049-B0DV4X652K.jpg",
+    "series_label": "Standalone",
+    "title": "The Riddle of the Lost Explorer",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 2,49 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DV4X652K",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DV5J1218",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0DV4X652K",
+        "label": "eBook 2,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DV5J1218",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/050-B0DV24XDS5.jpg",
+    "series_label": "Standalone",
+    "title": "Time Travel: The Mission That Changed the Future",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 5,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DV24XDS5",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DV3VQ1X1",
+        "label": "📖 5,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0DV24XDS5",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DV3VQ1X1",
+        "label": "📖 5,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/051-B0DJCJ3X8Z.jpg",
+    "series_label": "Standalone",
+    "title": "The Art of Disruptive Power",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 1,49 · Imp. 11,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DJCJ3X8Z",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DJFCB8Z1",
+        "label": "📖 11,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0DJCJ3X8Z",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DJFCB8Z1",
+        "label": "📖 11,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/052-B0DGF384L4.jpg",
+    "series_label": "Standalone",
+    "title": "Coloring Books: Stress Relief and Creative Stimulation",
+    "formats": [
+      "eBook"
+    ],
+    "price_label": "eBook 1,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0DGF384L4",
+        "label": "eBook 1,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "ebook",
+        "url": "https://www.amazon.co.uk/dp/B0DGF384L4",
+        "label": "eBook 1,49"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/053-B0DGCNHV7Y.jpg",
+    "series_label": "Standalone",
+    "title": "Graffiti Dreams: A Coloring Journey",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 25,00",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGCNHV7Y",
+        "label": "📖 25,00"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DGCNHV7Y",
+        "label": "📖 25,00"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/054-B0DGCM6BVQ.jpg",
+    "series_label": "Standalone",
+    "title": "Grafitti Dreams: A Coloring Journey (alt)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 11,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGCM6BVQ",
+        "label": "📖 11,99"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DGCM6BVQ",
+        "label": "📖 11,99"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/055-B0DG5V8V1K.jpg",
+    "series_label": "Standalone",
+    "title": "Magical Mandalas: A Creative Escape",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 18,00",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DG5V8V1K",
+        "label": "📖 18,00"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DG5V8V1K",
+        "label": "📖 18,00"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/056-B0DG5WRV6V.jpg",
+    "series_label": "Standalone",
+    "title": "Magical Mandalas: A Creative Escape (pocket)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DG5WRV6V",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DG5WRV6V",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/057-B0DGMNWW1X.jpg",
+    "series_label": "Standalone",
+    "title": "Fantasy Dreams: Color Your Imagination",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 16,00",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGMNWW1X",
+        "label": "📖 16,00"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DGMNWW1X",
+        "label": "📖 16,00"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/058-B0DGMDBJ24.jpg",
+    "series_label": "Standalone",
+    "title": "Fantasy Dreams: Color Your Imagination (pocket)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGMDBJ24",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DGMDBJ24",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "EN",
+    "series": "outros",
+    "cover_img": "assets/capas/059-B0DGCYP4BX.jpg",
+    "series_label": "Standalone",
+    "title": "Grafitti for Cool Kids",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 5,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGCYP4BX",
+        "label": "📖 5,49"
+      },
+      {
+        "flag": "🇬🇧",
+        "type": "print",
+        "url": "https://www.amazon.co.uk/dp/B0DGCYP4BX",
+        "label": "📖 5,49"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "outros",
+    "cover_img": "assets/capas/060-B0GH15RMK5.jpg",
+    "series_label": "Standalone",
+    "title": "El Enigma del Explorador Perdido",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 9,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GH15RMK5",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GH8K6QMW",
+        "label": "📖 9,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.es/dp/B0GH15RMK5",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0GH8K6QMW",
+        "label": "📖 9,99"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "outros",
+    "cover_img": "assets/capas/061-B0DGT6DH1H.jpg",
+    "series_label": "Standalone",
+    "title": "Sueños de Graffiti: Un Viaje para Colorear",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 18,00",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGT6DH1H",
+        "label": "📖 18,00"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0DGT6DH1H",
+        "label": "📖 18,00"
+      }
+    ]
+  },
+  {
+    "lang": "ES",
+    "series": "outros",
+    "cover_img": "assets/capas/062-B0DGTB4WHQ.jpg",
+    "series_label": "Standalone",
+    "title": "Sueños de Graffiti (pocket)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. 6,49",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0DGTB4WHQ",
+        "label": "📖 6,49"
+      },
+      {
+        "flag": "🇪🇸",
+        "type": "print",
+        "url": "https://www.amazon.es/dp/B0DGTB4WHQ",
+        "label": "📖 6,49"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "outros",
+    "cover_img": "assets/capas/063-B0GH6J4L34.jpg",
+    "series_label": "Standalone",
+    "title": "Das Rätsel des verschollenen Entdeckers",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 11,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GH6J4L34",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GH6F4KLG",
+        "label": "📖 11,99"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "ebook",
+        "url": "https://www.amazon.de/dp/B0GH6J4L34",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0GH6F4KLG",
+        "label": "📖 11,99"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "outros",
+    "cover_img": "assets/capas/064-B0DGF6P6H1.jpg",
+    "series_label": "Standalone",
+    "title": "Graffiti-Träume: Eine Malreise (pocket)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. €10,00",
+    "links": [
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0DGF6P6H1",
+        "label": "📖 €10,00"
+      }
+    ]
+  },
+  {
+    "lang": "DE",
+    "series": "outros",
+    "cover_img": "assets/capas/065-B0DGF6VS61.jpg",
+    "series_label": "Standalone",
+    "title": "Graffiti-Träume: Eine Malreise (grande)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. €26,00",
+    "links": [
+      {
+        "flag": "🇩🇪",
+        "type": "print",
+        "url": "https://www.amazon.de/dp/B0DGF6VS61",
+        "label": "📖 €26,00"
+      }
+    ]
+  },
+  {
+    "lang": "FR",
+    "series": "outros",
+    "cover_img": "assets/capas/066-B0GGZD8V6B.jpg",
+    "series_label": "Standalone",
+    "title": "Le Mystère de l'Explorateur Perdu",
+    "formats": [
+      "eBook",
+      "Impresso"
+    ],
+    "price_label": "eBook 3,99 · Imp. 11,99",
+    "links": [
+      {
+        "flag": "🇺🇸",
+        "type": "ebook",
+        "url": "https://www.amazon.com/dp/B0GGZD8V6B",
+        "label": "eBook 3,99"
+      },
+      {
+        "flag": "🇺🇸",
+        "type": "print",
+        "url": "https://www.amazon.com/dp/B0GH8BCHL8",
+        "label": "📖 11,99"
+      }
+    ]
+  },
+  {
+    "lang": "FR",
+    "series": "outros",
+    "cover_img": "",
+    "series_label": "Standalone",
+    "title": "Graffiti Dreams: Un Voyage de Coloriage pour tous les âges",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. €26,00",
+    "links": []
+  },
+  {
+    "lang": "IT",
+    "series": "outros",
+    "cover_img": "",
+    "series_label": "Standalone",
+    "title": "Graffiti Dreams: Un Viaggio di colori per tutte l'età (grande)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. €16,00",
+    "links": []
+  },
+  {
+    "lang": "IT",
+    "series": "outros",
+    "cover_img": "",
+    "series_label": "Standalone",
+    "title": "Graffiti Dreams: Un Viaggio di colori per tutte l'età (pocket)",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. €5,99",
+    "links": []
+  },
+  {
+    "lang": "JA",
+    "series": "outros",
+    "cover_img": "assets/capas/070-B0DGF6GKSY.jpg",
+    "series_label": "Standalone",
+    "title": "グラフィティドリームス: カラーリングジャーニー",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. ¥2500",
+    "links": [
+      {
+        "flag": "🇯🇵",
+        "type": "print",
+        "url": "https://www.amazon.co.jp/dp/B0DGF6GKSY",
+        "label": "📖 ¥2500"
+      }
+    ]
+  },
+  {
+    "lang": "NL",
+    "series": "outros",
+    "cover_img": "",
+    "series_label": "Standalone",
+    "title": "Graffiti Dromen: Een Kleuravontuur",
+    "formats": [
+      "Impresso"
+    ],
+    "price_label": "Imp. rascunho",
+    "links": []
+  }
+]
